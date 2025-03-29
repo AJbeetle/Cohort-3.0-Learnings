@@ -1,0 +1,59 @@
+part 2 of authentication 
+
+JWTs can be decoded by anyone---------------------------------------
+
+JWTs feel like insecure but are not somehow that insecure
+
+go to server.js program 
+
+// after that goto assignment_1.js
+
+//basic hw
+now homework assignment is to conditionally use logout and signin and signup pages, it means whenever user clicks on button logout he should not see user info and whenever usere is signed in he shouldnot see sign in and singup fields  : DONE 
+
+//advanced hw
+
+create frontend and backend for todo properly using authentication and store in json file don't use databases : DONE 
+
+
+// COOL AFTER THIS QnA
+
+iat in jwt token is : issued at 
+it is timestamp
+
+unix timestamp how much time as passed since 1970 
+
+localStorage.setItem("","")
+
+localStorage.getItem("","")
+
+see image : ways to authenticate 
+
+tokens should have expiry time , token refresh should be possible
+
+cors whitelisting :-
+
+const cors = require("cors");
+
+app.use(cors(
+    domains : ["app.100xdevs.com"]
+))
+
+
+-> Allowing multiple account logins at same time
+
+see image : how to host websites till made
+
+how does resource sharnig happen between two backends :
+
+1. you can directly do api call
+2. you can talk via some middle connections:-
+  - pub subs
+  - GRPC
+
+Pre-flight machenaism in CORS and how is it different from simple request ?
+
+-> so when you send request from your browser to some other server so cross origin communication is happening so, in this case before actual request goes in there is a pre-flight request that is sent on the basis of its response the actual request is allowed or blocked
+
+
+see image : jwt expiry code

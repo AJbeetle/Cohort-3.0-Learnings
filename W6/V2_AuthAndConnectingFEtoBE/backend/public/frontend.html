@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FE -> BE connect</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.7/axios.min.js"></script> 
+
+</head>
+
+<body>
+    <div id="signup">
+        Signup
+        <input id="signup-username" type="text" name="username" placeholder="Username">
+        <input id="signup-password" type="password" name="password" placeholder="Password">
+        <button onclick="signup()">SignUP</button>
+    </div>
+
+    <div id="signin">
+        Signin
+        <input id="signin-username" type="text" name="username" placeholder="Username">
+        <input id="signin-password" type="password" name="password" placeholder="Password">
+        <button onclick="signin()">SignIN</button>
+    </div>
+
+    <div id="userInfo">
+        User information: 
+        <div id="information"></div>
+
+        <div>
+            <button onclick="logout()">Logout</button>
+        </div>
+    </div>
+
+    <!-- <div>
+        <button onclick="showUser()">ShowUser</button>
+    </div> -->
+
+    
+
+    <script>
+
+        let div1 = document.getElementById("signup");
+        let SupUser = document.getElementById("signup-username");
+        let SupPass = document.getElementById("signup-password");
+        
+        let div2 = document.getElementById("signin")
+        let SinUser = document.getElementById("signin-username");
+        let SinPass = document.getElementById("signin-password");
+
+        let div3 = document.getElementById("userInfo");
+        let userInfo = document.getElementById("information");
+
+        // div1.style.display="flex";
+        // div2.style.display="flex";
+        div3.style.display="none";
+
+
+
+        async function signup(){
+            const user = SupUser.value;
+            const pass = SupPass.value;
+
+            await axios.post("http://localhost:3000/signup",{
+                username : user,
+                password : pass
+            })         
+
+            div1.style.display="none";
+            div2.style.display="block";
+
+            alert("you are done signing up -> NOW SIGN IN")
+        }
+
+        async function signin(){
+            const user = SinUser.value;
+            const pass = SinPass.value;
+
+            const response = await axios.post("http://localhost:3000/signin",{
+                username : user,
+                password : pass
+            })
+
+            
+            // const token = response.data.token // so we will not stroe it here rather will store it in localstorage of this website
+            localStorage.setItem("token", response.data.token);
+
+            
+            // need not to remove any element from dom  
+            /* 
+            let div1 = document.getElementById("signin");
+            let div2 = document.getElementById("signup");
+            document.body.removeChild(div1);
+            document.body.removeChild(div2);
+            */
+
+            getUserInfo();
+            
+            // NO NEED TO REMOVE ELEMENT JUST SET YOUR DISPLAY in STYLE NONE
+/* 
+            // so, dom manipulation is asynchronous operation, therefore alert comes first and then div1 and div2 are removed to make it happen before put await before these dom manipulating commands [removeChild() is synchronous only, but browser does not retain the screen immediately, it waits unitl the current JS execution cycle is finished ] by using following promise await the alert comes after the dom has been manipulated
+
+
+            // await new Promise((resolve, reject)=>{
+            //     setTimeout(resolve,5);
+            // })
+ 
+            //by the way we need not have this but yeah maja aaya sikh ke
+ */
+            alert("you are signed in");
+
+            div1.style.display="none";
+            div2.style.display="none";
+            div3.style.display="block";
+            
+        }
+
+        async function getUserInfo(){
+            const response = await axios.get("http://localhost:3000/me",{
+                headers:{
+                    token : localStorage.getItem("token")
+                }
+            })
+            userInfo.innerHTML = "username : "+response.data.username
+        }
+
+        // getUserInfo();
+
+        function logout(){
+            localStorage.removeItem("token");
+            userInfo.innerHTML = "";
+            div3.style.display="none"
+            SupUser.value=""
+            SupPass.value=""
+            SinUser.value=""
+            SinPass.value=""
+            div1.style.display="block"
+            div2.style.display="block"
+        }
+
+        // function showUser(){
+        //     div3.style.display="block"
+        // }
+
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,134 @@
+We will learn about authentication : sign in and sign out in express app
+
+The most basic way  : JWt and token based authentication (header based authentication)
+
+other way is : cookie based authentication 
+
+only difficult thing is :
+1. stateless nature of JWT
+2. why are they better then diff token
+3. what are JWT how can they be decoded by everyone
+
+
+WE ARE GOING TO LEARN 
+1. AUTH BASICS
+2. JWT (JSON web tokens)
+3. Authorization header
+4. Creating your own Auth middleware 
+5. localStorage
+
+Basic AUthentication WOrkfloww : 
+
+So when we signUp on any website like google.com or facebook.com we send them some information of ours i.e. username and password the website stores this info in database and gives us response that we are signed in 
+(now more complex of a checup happens with these big company websites like they do check if the email is correct or not by sending OTP to your given username but for now we will skip those details )
+
+2. Now when you have signed in or whenever you SignIN the facebook backend serverr checks for your username and passs info in their database and then return you a token on basis of which now facebook.com will authenticate anything you do their servers  (token is generated everytime you sign in)
+
+3. now this token is a very important and very crucial thing to be saved form others access because this is the way browser is making sure that indeed yes you are the one making requests, if someone else steals this token and sends request from postman then they can make changes to your account on your behalf. SO KEEP YOUR TOKEN SAFE
+
+4. so everytime you send a message or give get request for getting posts to facebook.com you are continuosuly sending this token to their backend servers which are then checking that to whom this token is assigned and then returning the data accordingly 
+
+5. This token stores your infon and gives you persistent session meaning once you login the website is open for you forever until you logout
+
+ANALOGY to BANK EXAMPLE :-
+WHEN YOU OPEN A BANK ACCOUNT IN A BANK
+1. go to bank and give your information 
+2. they give you back a cheque book
+3. every time you want to send money, you write it in the cheque book and send it over to the bank 
+4. that is how bank identifies you. : THE SIGNATURE ON THE CHEQUE BOOK  : similar to this token how facebook authenticates who you are
+
+
+NOW KEEP IN MIND once your TOKEN is stolen your account is pretty much gone
+
+
+see app100xdevs .com request header contains cookie which contains token
+
+
+why TOKEN vs Always sending Username and passwrod is better ?
+-> **********************ANSWER LATER AFETR CLASS**********************************
+
+
+let's code : go to folder : backend : going to create basic backend having request handlers to support storing username and pass somewhere in memeory and we will return some token
+
+
+so every users tokens are stired in somewhere in the backend and my own token is stored in the frontend my client side app running on browser
+
+
+JWT : Jason Web Tokens : so it sends token only one time to end user and keep it on cache memory and then every time he try's to use we can Authenticate used by this token
+
+NOW We will create a authenticated endpoint 
+
+so a point where user can ask for info after being signed in 
+
+Let’s create an endpoint (/me ) that returns the user their information `only if they send their 
+
+go to server.js
+
+
+so say you are logged in to 100xdevs.com and you share yoru session cookie to someone then they can also access the content from your behalf (harkirat has applied the check only for logins that if website can't be logged in multiple devices once at a time, but they can also add ip checking and browser fingerprinting to make cookies sharing invalid so more vigorous checks while authentications)
+
+Say facebook.com will not allow you to access someone elses account if you use someone else's cookies, unless you add some more important instructions.
+
+As seen in previous videos : most pribably week5 video2 : someone created aibud.com : https://wordpress.org/plugins/aibuddy-openai-chatgpt/
+here he used some ip cehcking and prevented user from generating more than one image before singup
+
+
+we have sort of created full stack application
+
+Problem is it doesn't yet use JWT yet 
+
+
+JWT ----------------------------------------------------
+TOKEN vs JWT (JSON WEB TOKEN)
+why we need this ?
+=> there is problem with using stateful tokens
+
+stateful means : we need to store these tokens in a variable right now and eventually in a databases
+
+Problem : see image : fullStack app workflow with tokens => what happens in case of tokens is that we are hitting database for every request. So many requests will go to db then, and our token in stateful it means it is stored in some state/variable in the DB 
+
+The problem in that we need to send a request to a database evey time user wants to hit an authenticated endpoint
+
+So the solution is JWT
+so now what happens in case of JWTs whenever user signin with username and password so it encrypts the username and sends the token including this encryption, so now when user accesses /me page and sends the token the server route handlers can convert the encrypted token to usernname by decryting it and then after that it can access things from the database
+
+see image =>  jwt as solution
+
+so your token decoding becomes stateless that is what JWT use case
+
+JWT are not similar to encryptions we are going to learn a lot about gotchas when it comes to JWT 
+
+JWT are compact self contained way to represent information between two parties, commonly used for authentication and info exchange in web application
+
+JWTs are stateless : JWTs contain all the information needed to authenticate a request, so the server doesn't need to store the session data. All the data is stored in  the token itself
+
+basically databse don't get much load by using jwt, it is faster to decode
+so jwt essentially prevents 1 round trip from the backend server and DB for any user request
+
+cookie vs jwt ?
+=> wrong comparision we compare cookies and auth header
+
+cookies are special kind of headers that web browsers by default create and jwt are token that can be stored in cookie or auth heafer
+
+JWT is not encrypted it is encoded 
+
+replacing token logic with jwt : go to file server_2.js
+
+
+
+so, jwt.io was able to decode my jwt without JWt_SECRET bacuse it might be using jwt.decode() method that does not require JWt_SECRET
+but what is relevacne of JWt_SECRET we will leanr tomorrow
+
+
+JWT vs Cookie approach : see image : cookie vs jwt => so this cookie approach is very browser specific code since cookies are something perosonal to browsers and when you make application for mobile then you would like to come back to tokens
+
+
+what is best practise for authentication  ? => use waht big companies are usinf like nextAuth at the end we have to use libraries only, this all low levellearning will go in gutter but it iw worth it 
+
+JWT_secret - it is for admin of the website, it has to be safe just like your db. so whoever have this can generate / issue tokens on your behalf
+
+
+understand again : 2:11:57 - 2:15:31
+
+
+see image : weather app - screenshot
