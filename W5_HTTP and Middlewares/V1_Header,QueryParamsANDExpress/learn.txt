@@ -1,0 +1,73 @@
+methods in http server : intent of what you wanna do with the server
+
+GET : to get all posts
+pOST : add new tweet
+PUT/PATCH : to change a tweet
+DELETE : to delete a post
+
+framework vs library vs modules vs packages vs software
+
+HEADERS  :   some extra metadata you sent in addition with body
+so go to goole and inspect go to first request and there you see request header. SO this is the header having sensitive data 
+so your password is osomewehre in cookies part
+
+header : it is akey-vallue pair sent btw client and server in http request or responses.
+They convey metadata about the request or response such as content type, auth information etc
+
+common headers : 
+1. authorization 
+2. content type
+3. referer
+
+
+fetch API_--------------------------------
+
+there are two high level ways a browser can send requests to an http server
+1. browser URL (default GET request)
+2. from HTML form or JavaScript (various request types)
+
+
+some background requests - fetch function to send these background requests
+
+go to Folder learn1
+
+
+Learning Query Parameters : go to sever.js
+
+
+
+Single Page Application : background requests going on 
+so when you wanna create some SPAs in future and want to create background requests for that browser introduced 
+AJAX  :  Asynchronous JavaScript and XML , it lets user asynchronously load the backend as the page loads and then renders it as it gets the data or the type of the data that it gets
+
+the motivation of fetch or axios is to build SPAs
+
+so yes get method request object does not have body, here you can only send data thorugh query params
+
+if you want to send the body you have to send the post request
+
+
+you can use import syntax instead of require syntax , for that you will need to update your local parser to ES6 otherwise nodejs won't understand it
+
+
+How to render a data generated in express to frontend :
+two ways :
+1. get data shove it to dom
+2. templating engines like ejs
+
+
+we will in future do npx server
+
+
+serve is another npx module that lets you serve static file, SPA or just staic file (no matter it is on your device or the local network), also provides neat interface for listing the directory contents
+
+CORS : cross origin resource sharing 
+
+
+so cookie does not exactly have your username and password it just haves your token so until this cookie is working on my system only for that period of time you will be able to login as me 
+so, cookie contains the token for that user, we will learn it in JWT 
+
+
+Fetch is like a postman who just delivers and picks up letters. You need to do some work yourself, like opening the letter (parsing JSON) and checking for problems (HTTP errors).
+
+Axios is like a premium delivery guy who also reads the letter, explains it to you (automatic JSON parsing), and checks for issues (error handling).

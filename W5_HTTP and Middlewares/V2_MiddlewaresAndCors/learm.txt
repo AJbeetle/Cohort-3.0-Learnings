@@ -1,0 +1,52 @@
+we learnt fetch api, axios library - let frontend talk to backend 
+
+so now today we will learn middlewares 
+
+so basic routing we have learnt, and now we will learn 
+1. Better routing
+2. add a database in backend code
+3. hwo can we add middlewares, and what are middlewares
+
+middlewares : we don't need them but they are good to be used
+
+So, middleware refers to function that have access to the request object(req), response object(res), and the next function in the application's request-response cycle.
+Middleware functions can perform a variety of tasks, such as
+1. modifying the request or response object.
+2. ending the request-response cycle.
+3. calling the next middleware function in the stack.
+
+
+*** bigggest use of middlewares is for authentications ***
+
+
+
+COMMONLY USED middlewares
+
+1. __express.json()__ middleware : it is itself using some library : bodyParser library => it is built-in middleware in express used to parse incoming request bodies that are formatted as json
+
+so these people are also using bodyParser library , express people used this to bring it in express
+
+see image : express.json() use
+
+app.use(express.json()) => it is written like this because express has function which returns itself a function so that is what is converts req body to json object
+
+so why do we need to do this ?
+
+=> t is because express says I am not going to descriminate with anyone and going to allow users to send any type of data and if you know that your users are gonna send you json data then just use my express.json() method as middleware to parse the body in json object 
+
+in some framweorks you might not neef these parsers but here we do, we might have anothet parser for different type of data being sent by the user
+
+
+2. __cors__ middleware :  CORS = > cross origin resource sharing middleware is a security feature implemented by web browsers that controls how resourse on a web server can be requested from another domain. Its a crucial mecahnism for managing cross-origin requests and ensuring secure interactions between different origins on web
+
+by default in nodejs express cors requests are blocked, but we want our frontend and backend to talk to each other so now we will learn how to use cors to just let our backedn and frontend to talk to each other
+
+app.use(cors()) written like this
+
+now if you host frontend and backend on same domain then no cors error exist 
+
+
+The key in cors is called "origin" by which we can allow different url to access the Backend, it is used like:
+app.use(cors({
+origin: ["http://www.google.com", "http://employee.google.com"]
+}));
