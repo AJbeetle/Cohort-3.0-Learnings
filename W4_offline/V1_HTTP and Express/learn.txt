@@ -1,0 +1,56 @@
+Learning Express and HTTP request with real world examples
+Learning about postman and how to interact with http servers
+
+
+Real World Example : We need to visit a doctor (see slides)
+
+Doctor services are single threaded :  only tend to work on one person at a time
+
+
+Delgating tasks : like asynchronous functions 
+
+doctors are similar to JS threads and single threaded : can do one task at a time
+
+your logic is like a doctor like function calculateSum(n)
+the logic for this function is doctor and you can put it out in the world for people to use
+
+anyone who wants to access this function need to find the address where it resides then ask permission to access it
+
+Writing code is one thing and make it available for evryone is one thing. So second thing is what http server lets you do
+
+HTTP : Hyper text tranfser protocol
+
+
+How to create HTTP sever ? 
+ans = Express is one way to creaye HTTP server.
+SpringBoot in Java it is another HTTP server
+
+HTTP is just a protocol you can write it in any language doesn't need to be nodejs (which is just js runtime), JS is just one language and express is one of the frameworks 
+
+as time goes we will see various ways to create http server for now we just use express
+
+
+
+
+express is a library encapsulates the complexity of creating http server    
+
+on your machine you can run multiple servers on samemachine on different ports (which are like different addresses)
+different servers can be written on any kind of language but all of them will have unique address i.e. port
+
+
+you can have a say algorithm for chatgpt and I want to now make it public - so what will I do is I will create http server at some port and my machine and then make it public so people can access my algo and make computations as required
+
+and this http server is single threaded it means responding to one request at a time
+
+    
+
+While writing backends backend should lots of validation that is handle requests that are dumb sent by the user
+
+
+
+
+introduce nodemon we don't have to rest start it again and again
+
+
+
+

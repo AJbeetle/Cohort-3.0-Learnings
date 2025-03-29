@@ -1,0 +1,28 @@
+Middlewares : 
+
+Amusement park example : so the ticket checker is similar to middlewares while going to a ride in a park
+
+A person sitting in middle of your end client and the server that checks if the data sent is correct and valid formatted 
+
+
+Middlewares : express is routing and middleware web framework that has minimal functionality of its own  , An express application is a series of middleware function calls.
+
+
+According to express the ticket checker the ride both are considered middleware even though ride is at the end point so this analogy refers that in express the app.get, app.post or any router handling functions are also middlewares and app.use is also middleware
+
+middleware can do bunch of things :
+1. execute a code
+2. make changes to the request response objects
+3. end the request-response cycle
+4. call the next middleware function in the stack
+
+final goal is : one middleware does one task and then another middleware does another task and finally we reach the last middleware which is aka route handler which sends the actual response so user gets desired output and if user has some error in his request that he generated in the start of response request cycle then this middleware cycle might end anywhere in between 
+
+and the logic to use multiple middlewares can be understood by the example png :  example.png (also codified this example)
+
+go to file : server.js
+
+/// so doing assignment from cohort 2.0 week3 01_middlewares
+// so go to directory : E:\COHORT 3.0\WebDev\AssignmentsCohort2.0\week-3\01-middlewares
+
+and do your task there
