@@ -1,0 +1,17 @@
+.spinner{
+    width:50px;
+    position:absolute;
+    top:10%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    animation : rotateSpinner 1s linear infinite;
+}
+
+@keyframes rotateSpinner {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

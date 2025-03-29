@@ -1,0 +1,48 @@
+
+<!-- MY CODE => where I initially load all components and then update then in re-rendering -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REACT WORKING</title>
+</head>
+<body>
+</body>
+<script>
+    // on page load all components get rendered initially
+    document.addEventListener("DOMContentLoaded",function(){
+        buttonComponent();
+    })
+
+
+    // STATE : all state variables inside state object
+    let state = {
+        counter : 0
+    }
+
+
+    // COMPONENT : static code, how a component will appear
+    function buttonComponent(){
+        let but = document.createElement("button");
+        but.setAttribute("id","counterButton");
+        but.setAttribute("onclick","counterButtonPressed()");
+        but.innerHTML = `Counter ${state.counter}`;
+        document.body.appendChild(but);
+    }
+
+    // COMPONENT logic and re-rendering
+    function counterButtonPressed(){
+        state.counter++;
+        buttonComponentReRender();
+    }
+
+    function buttonComponentReRender(){
+        document.getElementById("counterButton").innerHTML = `Counter ${state.counter}`;
+    }
+
+    buttonComponentReRender();
+
+</script>
+
+</html>

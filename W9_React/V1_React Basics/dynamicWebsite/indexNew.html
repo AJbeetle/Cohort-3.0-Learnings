@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REACT WORKING</title>
+</head>
+<body>
+    <div class="buttonDiv"></div>
+    <script>
+
+        // STATE : all state variables inside this state object
+        let state = {
+            count : 0
+        }
+
+        
+        // COMPONENT : button Component : see definition and try to relate
+        function buttonComponent(count){
+            let but = document.createElement("button");
+            but.setAttribute("id","counterButto");
+            but.setAttribute("onclick","onButtonPressed()");
+            but.innerHTML = `Counter ${count}`;
+            return but;
+        }
+        
+        // working of what button Component will do :  developer writes
+        function onButtonPressed(){
+            state.count++;
+            buttonComponentReRender();  // this also we don't need to do once we reach to react
+        }
+
+        // re-rendering of the component : this is what react does
+        function buttonComponentReRender(){
+            let buttonDiv = document.querySelector(".buttonDiv");
+            buttonDiv.innerHTML = "";
+            let button = buttonComponent(state.count);
+            buttonDiv.appendChild(button);
+        }
+
+        buttonComponentReRender();
+
+
+        // SO ONLY THING YOU WILL HAVE TO WRITE WHEN YOU DO REACT IS : 
+        /*   
+                1. STATE OBJECT : state object from this code
+                2. COMPONENT : buttonComponent(count) function
+                3. COMPONENT LOGIC : onButtonPressed() function 
+         */
+
+         // so you can see how DOM code was cluttering the page : gets harder and harder to maintain and write : but eventually we will learn JSX code to make this easier too
+    </script>
+</body>
+</html>

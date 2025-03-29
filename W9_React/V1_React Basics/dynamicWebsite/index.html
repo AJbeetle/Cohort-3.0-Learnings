@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM MANIPULATION</title>
+</head>
+<body>
+    <button onclick="onButtonPress()" id="counter">Counter 0</button>
+    <script>
+
+        //STATE VARIABLE
+        let state = {
+            counter : 0 
+        }
+
+
+        // // COMPONENT RE_RENDERING - this is what REACT DOES BY ITSELF
+        // NEW FUNCTION
+        function onButtonPress(){
+            state.counter++;
+            button_Re_Render();
+        }
+
+
+        // OLD FUNCTION
+        /* function buttonPressRender(){
+            let button = document.getElementById("counter").innerHTML;
+            let count = button.split(" ")[1];
+            let num = parseInt(count);
+            num++;
+            console.log(button);
+            document.getElementById("counter").innerHTML = `Counter ${num}`;
+        } */
+
+
+        // When you already have HTML 
+        function button_Re_Render(){
+            document.getElementById("counter").innerHTML = `Counter ${state.counter}`;
+        }
+
+
+        // See indexNew.html for more closer resemblance to react
+
+    </script>        
+</body>
+</html>
