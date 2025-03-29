@@ -1,0 +1,31 @@
+
+.download :hover{
+    background-color: #00376b;
+    border:2px solid #00376b;
+}
+
+.theme :hover{
+    cursor: pointer;
+    background-color:rgba(0, 0, 0, 0.20);
+}
+
+
+.license{
+    visibility: hidden;
+}
+.container2 :hover{
+    .license{
+        visibility: visible;
+    }
+}
+
+a{
+    color:#005fb8;
+    text-decoration: underline;
+}
+
+header a, footer a{
+    text-decoration: none;
+    cursor: pointer;
+}
+

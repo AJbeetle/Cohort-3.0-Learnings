@@ -1,0 +1,2 @@
+1. htop command tells how many processors in comp are consuming how much power in mac
+2.

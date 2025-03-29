@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visual Studio Code - Code Editor</title>
+    <!-- <style>
+        body{
+            background-color:#0e0e0e;
+        }
+
+    </style> -->
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+
+    <header style="border-bottom:1px solid rgba(255, 255, 255, 0.12); padding-bottom: 10px;">
+        <div style=" display:flex;justify-content: space-between;color:white; padding-left:300px; padding-right:300px; padding-top: 10px;">
+                <div style="display:flex; align-items: center;">
+                    <div style="display:flex;">
+                        <img src="favicon.png" width="19">
+                        <span style="color:white;font-size: 19spx; font-weight: 500;padding-left:10px;padding-right: 20px;">Visual Studio Code</span>
+                    </div>
+                    <div>
+                        <a class="topLink" href="/">Docs</a>
+                        <a class="topLink" href="/">Updates</a>
+                        <a class="topLink" href="/">Blog</a>
+                        <a class="topLink" href="/">API</a>
+                        <a class="topLink" href="/">Extensions</a>
+                        <a class="topLink" href="/">FAQs</a>
+                    </div>
+                </div>
+    
+                <div>
+                    <input type="text" placeholder="Sreach Docs">
+                    <button style="color: black;">Download</button>
+                </div>
+        </div>
+    </header>
+
+    <section class="top" style="border-bottom:1px solid rgba(255, 255, 255, 0.12); padding:40px 0px;">
+        <div style="margin:0px;display:flex; justify-content: center; color: white; padding: 10px 0px; font-size: 10px;">
+            <a href="/" style="color: rgb(0, 123, 255);">Version 1.93</a> &nbsp; is now available! Read about the new features and fixes from July.
+        </div>
+        
+        <div class="afterBanner">
+            <div>
+                <div style="margin: 10px;">
+                    <span style="text-align: center; font-size: 10px;padding:5px 10px;border:2px solid rgb(52, 52, 52); border-radius: 15px; background-color: rgb(52, 52, 52); color: rgb(157, 157, 157);font-weight: bold ;">
+                        Free. Built on open source. Run everywhere
+                    </span>
+                </div>
+                <div style="margin: 5px">
+                    <span style="padding:5px 10px; font-size: 45px; color: white;">
+                        Code Editing.
+                    </span>
+                </div>
+                <div style="margin: 5px">
+                    <span style="padding:5px 10px; font-size: 45px; color:white">
+                        Redefined.
+                    </span>
+                </div>
+                <div style="margin:20px 5px; padding:10px;" class="buttonhover">
+                    <button style=" border: 5px solid rgb(62, 149, 230); border-radius: 5px;background-color: rgb(62, 149, 230);color:white;padding:10px 20px; cursor:pointer; font-size: 15px;">
+                            Download for macOS
+                    </button>
+                </div>
+                <div style="margin: 5px">
+                    <span style="padding:10px; color: rgb(157, 157, 157); font-size: 10px;">
+                        <a href="/">Web</a>,
+                        <a href="/">Insiders edition</a>, or
+                        <a href="/">other platforms</a>
+                    </span>
+                </div>
+                <div style="margin: 5px">
+                    <span style="padding:10px; color: rgb(157, 157, 157); font-size: 10px;">
+                        By using VS code, you agree to its <a href="/">license</a> and <a href="/">privacy statement.</a>
+                    </span>
+                </div>
+            </div>
+            <div>
+                <img src="https://code.visualstudio.com/assets/home/home-screenshot-mac-2x-v2.png" width="500px">
+            </div>
+        </div>
+
+    </section>
+
+    <section>
+        <div style="margin: 40px 0px;padding : 30px 300px; display: flex; justify-content:space-between; background-color: black;">
+            <div style="color:white; width:33.33%; margin:5px;">
+                <span style="padding:10px; font-size: 20px; font-weight: 600;">Code in any language</span>
+                <p style="font-size:13px; font-weight:600;line-height: 160%;padding: 0px 10px; color:rgb(157, 157, 157);">VS Code supports almost every major programming language. Several ship in the box, like JavaScript, TypeScript, CSS, and HTML, but extensions for others can be found in the VS Code Marketplace.</p>
+            </div>
+            <div style="color:rgb(157, 157, 157); font-size: 13px;">
+                <ul style>
+                    <li>
+                        <div style="display:flex; align-items: center;">
+                            <div><img src="./icons/language-js.png" height="35px; width:auto;"></div>
+                            <div>JavaScript</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div style="display:flex; align-items: center;">
+                            <div><img src="./icons/language-cs.png" height="35px; width:auto;"></div>
+                            <div>C#</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div style="display:flex; align-items: center;">
+                            <div><img src="./icons/language-java.png" height="35px; width:auto;"></div>
+                            <div>Java</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div style="display:flex; align-items: center;">
+                            <div><img src="./icons/language-markdown.png" height="35px; width:auto;"></div>
+                            <div>Markdown</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div style="color:rgb(157, 157, 157); font-size: 13px;">
+                <ul style>
+                    <li>
+                        <div style="display:flex; align-items: center; ">
+                            <div><img src="./icons/language-ts.png" height="35px; width:auto;"></div>
+                            <div>TypeScript</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div style="display:flex; align-items: center;">
+                            <div><img src="./icons/language-cpp.png" height="35px; width:auto;"></div>
+                            <div>C++</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div style="display:flex; align-items: center;">
+                            <div><img src="./icons/language-json.png" height="35px; width:auto;"></div>
+                            <div>JSON</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div style="display:flex; align-items: center;">
+                            <div><img src="./icons/language-powershell.png" height="35px; width:auto;"></div>
+                            <div>PowerShell</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div style="color:rgb(157, 157, 157); font-size: 13px; ">
+                <ul style>
+                    <li>
+                        <div style="display:flex; align-items: center; ">
+                            <div><img src="./icons/language-python.png" height="35px; width:auto;"></div>
+                            <div>Python</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div style="display:flex; align-items: center;">
+                            <div><img src="./icons/language-html.png" height="35px; width:auto;"></div>
+                            <div>HTML</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div style="display:flex; align-items: center;">
+                            <div><img src="./icons//language-php.png" height="35px; width:auto;"></div>
+                            <div>PHP</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div style="display:flex; align-items: center;">
+                            <div><img src="./icons/language-yaml.png" height="35px; width:auto;"></div>
+                            <div>YAML</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div style="margin: 40px 0px;padding : 30px 300px; display: flex; justify-content:space-between; background-color: black;">
+            <div style="color:white; width:33.33%; margin:5px;">
+                <span style="padding:10px; font-size: 20px; font-weight: 600;">Code with extensions</span>
+                <p style="font-size:13px; font-weight:600;line-height: 160%;padding: 0px 10px; color:rgb(157, 157, 157);">Whether you're a beginner or an expert, we've got you covered. Choose from hundreds of extensions to power up your VS Code experience.</p>
+                <p style="font-size:13px; font-weight:600;padding: 0px 10px; color:rgb(157, 157, 157);"><a href="/">Learn more about extensions</a></p>
+            </div>
+            <div style="color:rgb(157, 157, 157); font-size: 13px;">
+
+                <a href="/" style="text-decoration:none; color:gray;background  : rgba(255, 255, 255, 0.04);">
+                    <div style="display:flex; align-self:flex-start; justify-content:center; gap:8px; align-items: flex-start; border : 3px solid gray; padding:10px; border-radius: 10px;" >
+                        <div>
+                            <img src="./icons/Services/python-extension (1).png" height=30px; width:auto; style="padding-top: 5px; padding-left: 5px;">
+                        </div>
+                        <div>
+                            <p style="line-height: 0.1%; color: white; font-weight: 600;">Python</p>
+                            <p style="width:140px; font-weight: 600;">Adds rich language support for Python</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="/" style="text-decoration:none; color:gray">
+                    <div style="display:flex; align-self:flex-start; justify-content:center; gap:8px; align-items: flex-start; border : 3px solid gray; padding:10px; border-radius: 10px;" >
+                        <div>
+                            <img src="./icons/Services/python-extension (1).png" height=30px; width:auto; style="padding-top: 5px; padding-left: 5px;">
+                        </div>
+                        <div>
+                            <p style="line-height: 0.1%; color: white; font-weight: 600;">Python</p>
+                            <p style="width:140px; font-weight: 600;">Adds rich language support for Python</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="/" style="text-decoration:none; color:gray">
+                    <div style="display:flex; align-self:flex-start; justify-content:center; gap:8px; align-items: flex-start; border : 3px solid gray; padding:10px; border-radius: 10px;" >
+                        <div>
+                            <img src="./icons/Services/python-extension (1).png" height=30px; width:auto; style="padding-top: 5px; padding-left: 5px;">
+                        </div>
+                        <div>
+                            <p style="line-height: 0.1%; color: white; font-weight: 600;">Python</p>
+                            <p style="width:140px; font-weight: 600;">Adds rich language support for Python</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div style="color:rgb(157, 157, 157); font-size: 13px;">
+                <ul style>
+                    <li>
+                        <div style="display:flex; align-items: center; ">
+                            <div><img src="./icons/language-ts.png" height="35px; width:auto;"></div>
+                            <div>TypeScript</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div style="display:flex; align-items: center;">
+                            <div><img src="./icons/language-cpp.png" height="35px; width:auto;"></div>
+                            <div>C++</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div style="display:flex; align-items: center;">
+                            <div><img src="./icons/language-json.png" height="35px; width:auto;"></div>
+                            <div>JSON</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div style="display:flex; align-items: center;">
+                            <div><img src="./icons/language-powershell.png" height="35px; width:auto;"></div>
+                            <div>PowerShell</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div style="color:rgb(157, 157, 157); font-size: 13px; ">
+                <ul style>
+                    <li>
+                        <div style="display:flex; align-items: center; ">
+                            <div><img src="./icons/language-python.png" height="35px; width:auto;"></div>
+                            <div>Python</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div style="display:flex; align-items: center;">
+                            <div><img src="./icons/language-html.png" height="35px; width:auto;"></div>
+                            <div>HTML</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div style="display:flex; align-items: center;">
+                            <div><img src="./icons//language-php.png" height="35px; width:auto;"></div>
+                            <div>PHP</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div style="display:flex; align-items: center;">
+                            <div><img src="./icons/language-yaml.png" height="35px; width:auto;"></div>
+                            <div>YAML</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </section>
+
+</body>
+</html>

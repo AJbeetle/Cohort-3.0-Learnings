@@ -1,0 +1,40 @@
+body{
+    background: black;
+}
+
+section.top{
+    /* background-color:#1c1c1c;  */
+    background:linear-gradient(180deg, #000000 0%, #141414 100%);
+}
+
+.topLink{
+    color:darkgray;
+    font-size: 12px;
+    cursor:pointer;
+    padding-left: 10px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.afterBanner{
+    display:flex;
+    /* color:rgb(157, 157, 157); */
+    justify-content: space-between;
+    padding-left: 300px;
+    padding-right: 300px;
+    padding-top: 10px;
+}
+
+.link{
+    color: white;
+}
+
+.buttonhover:hover{
+    color:aqua;
+}
+
+a{
+    color:rgb(0, 123, 255);
+    text-decoration: underline;
+    text-underline-offset:3px;
+}

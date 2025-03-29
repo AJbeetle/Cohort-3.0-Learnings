@@ -1,0 +1,14 @@
+HTML  - Hyper text markup language
+It gives website a skeleton, a basic building blocks, tags and attributes to crreate something.
+
+
+CSS - Cascading Style Sheets
+ - Inline CSS
+ - External CSS
+ - Same file style attribute
+
+
+Every color can be represented using color name, RGB values, Hex values, etc.
+
+
+
