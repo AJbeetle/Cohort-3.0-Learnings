@@ -1,0 +1,101 @@
+After learning this we will be having full knowledge of full stack [basic one excluding react and tailwind ]
+
+
+We'll understand databases more specifically NoSQL databases 
+
+we'll learn MongoDB and how can tou use it to persist data in your full stack project
+
+Things to learn 
+1. Creating a free MongoDB cloud server
+2. connecting your full stack app to MongoDB
+3. Defining the schema
+4. Mongoose 
+   Same as Express is library to create HTTP servers
+   similarly Mongoose is library that lets user to connect to mongoDB instance , put, grab and delete data from it
+5. CRUD operations [using mongoose library]
+
+your stack of full stack will look like :-
+1. FRONTEND : Simple(HTML, CSS and JS), React or NextJS
+2. BACKEND : Simple(JS , express in nodeJS), Rust, Java, Golang, python [different languages have dfferent frameworks ot create HTTP servers]
+3. DATABASES : SQL or NoSQL [like MySQL, MongoDB, PostgreSQL, many more ]
+
+NoSQL : easy to understand [mongoDB]
+
+we will have multiple backend servers [fleet of backend servers ] whihc will be transient [that is someone goes down other one will work, if no. of users og up then you scale them up]
+
+So they are not persisting data they will be stateless [we will not be storing any info in the backend server]
+
+
+databse is where you will persist data, we do scale and replicate databases but they don't meant to be autoscale very quickly we rarely touch its infrastucture
+
+If database centers die then it is disasters, in that cases you keep backups
+
+We will learn latr about deployment
+
+Database : these are organised collection of data that are structures to enable efficient storage, retreival and management of information.
+So, Wehenever you creaye a full stack app, you persist data in databases
+
+
+
+
+We are SPECIFICALLY MONGODB 
+
+NoSQL : broad category of database systems that diverge from traditional relational model used in SQL databases
+
+designed to handle variety of data models and workloads that may not fit neatly into the tabular schema of relational databases.
+
+Properties of NOSQL databases
+ -> Schema Flexibility : NOSQL databases often allow for a flexible schema, meaning you can store data in formats that don;t require a fixeed structure
+ -> Scalability : Many NoSQL databases are designed to scale out horizontally, maing it easier to distribute across multiple servers anf handle large volume of traffic
+
+MYSQL => needs sharding or master slave architecture to be used fro scalibility
+
+mongoDB compass : its gui application used to visualize database very quickly
+
+
+Cluster : bunch of machiner holding our data is called cluster
+
+Seeding data in cluster : putting data inside cluster
+1. creating todo app database : see image "todoapp database.png"
+2. add collections users and todos and add some some data to it
+
+
+Now we will understand how to do this all via nodejs, understading how to do CRUD operations in database thorugh bacjend
+
+creating backend of todo app
+
+So, Mongoose models CRUD operations : 
+1. create : 
+   UserModel.create({
+      name :  "aayushi",
+      email : "aaysush32@gmail.com",
+      password : "123123"
+   }) 
+
+2. read : 
+   UserModel.find({
+      __id : userId 
+   })   
+
+3. update :
+
+
+4. delete : 
+
+
+bearer token : the type oftoken that you are sending to the backend there are many types like bearer, api-key and many more
+
+
+
+Q //mongoose says first you need to specify the schema of your data, so why do we define schema when mongoDB is schemaless. We will answer later think yourself
+
+
+ans : we can use another library called mongoDB which does not require us to create Schema and lets user enter random data to database
+
+but we are using mongoose which requires to have schema specified so that our application is little bit strict and prevented from unusual errors, even now in mongoose you can add random data and it will exist so it is schemaless only . [so user from their end by making api calls cannot add any wrong data but admin can so mongoDB is still shcemaLess] , we just try to make it strict through mongoose
+
+
+tomorrow we will learn :
+1. routing in express
+2. password hashing 
+3. mongodb relationships

@@ -1,0 +1,50 @@
+Slides are same as yesterday
+Today learning 
+1. error handling 
+2. hashing passwords
+3. input validations zod
+4. mongoDB Relationships
+
+
+
+we'll do improvements :
+1. password is not hashed                                                          : DONE
+2. a single crash (duplicate email) crashes the whole app                          : DONE
+3. add more endpoints (mark todo as done)                                          : DONE
+4. Add timestamp at which todo was created the time it needs to be done by         : DONE
+5. Relationships in mongoDB                                                        : 
+6. Add validations to ensure email and password are correct format                 : DONE
+
+
+
+If your password is stored in plane text that is a security issue
+So you should hash your password
+
+Hashing : it is one way conversion , you cannot predict the original string it is very hard and resource consuming task to do
+
+people can have same passwords so their hash can be same, in that case we do SALTING : Salt is something that makes your product unique
+so, while hashing the password what you'll do is you will have some random salt string added to the end of the password then hash the password and store the hashed string in db also we will store the salt in the db
+
+now you can encrypt your passwords using SHA-256 algo which we learnt in web3 OR use bcrypt 
+
+let's code in index.js
+
+
+
+INPUT VALIDATIONS using ZOD
+
+Step1 : defining Schema of inputs that are to be validated
+Step2 : Parsing the data
+        -> how to send user exact errors
+        
+
+1. // Mini Assignment : add checks for password field that it follows following requirements 
+        /* 1. atleast one uppercase letter
+        2. atleast one lowercase letter
+        3. atleast one special character 
+        4. atleast three numerics
+        5. min length is 10 and max length is 20 */  : DONE
+
+
+
+2. //major Assignment : complete todos improvement tasks given in lecture slides
