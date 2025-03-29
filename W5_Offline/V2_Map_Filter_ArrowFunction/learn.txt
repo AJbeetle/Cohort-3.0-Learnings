@@ -1,0 +1,11 @@
+understanding  map, filter and arrow functions
+
+map and filter are helper function for arrays
+
+and arrow functions are new way of writing functions
+
+
+see learn.js
+
+
+// Assignment 1  :  Create a map function that takes two inputs arr and tranfomation callback function and trnafroms array into new one using the transformation func :  DONE

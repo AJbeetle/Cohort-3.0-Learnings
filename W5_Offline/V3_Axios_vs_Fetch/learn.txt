@@ -1,0 +1,13 @@
+ // LEARNING AXIOS vs FETCH 
+
+ thse are two popular ways to get value from backend server 
+
+
+ fetch is natively provided by browser and node in system
+
+ vs Axios is not present natively it is external library it is cleaner then fetch
+
+ it also priveds 5 add ons
+
+
+ so popular way of fetching data from backend is axios not fetch

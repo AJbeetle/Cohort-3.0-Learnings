@@ -1,0 +1,37 @@
+Git , Github and Version control systems
+
+Version Control Systems = A system that keeps track of our files or projects 
+-> it allows you to revert selected files to previous state, 
+-> revert the entire project to previous state, 
+-> compare changes over time, 
+-> see who last modified something so that we can know what might be causing a problem, 
+-> or what is the issue, who made it, and when with the details
+
+
+
+VCS are of two types :
+1. Centralized 
+2. Decentralized
+
+see image  : VCSTwoTypes
+
+
+why git out of all
+1. free
+2. open source
+3. scalabale
+4. super fast
+5. cheap branching and merging
+
+
+what is github :  it is web hosting service for all git repositories 
+
+you can use git without github but you cannot use github without git    
+
+terms and terminology:
+1. Local Repository
+2. Working Directory and Staging Area or Index
+3. push
+4. pull
+
+see notes images in folder
