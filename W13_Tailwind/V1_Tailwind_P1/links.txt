@@ -1,0 +1,36 @@
+
+Lecture slides : https://www.canva.com/design/DAGVU1RXwn0/EBNpEgL7LxVUQd6ThorItA/edit
+
+
+
+SOME RANDOM CHATS TO TAKE LOOK AT :-
+
+
+If you encounter the error:
+npm ERR! could not determine executable to run while running npx tailwindcss init -p, it might be due to a version issue with Tailwind CSS.
+
+To resolve this:
+Uninstall the current version of Tailwind CSS:
+npm uninstall tailwindcss
+    
+Install the previous version of Tailwind CSS:
+npm install tailwindcss@3
+
+Alternatively, you can follow the updated instructions for Tailwind CSS v4 here: https://tailwindcss.com/docs/installation/using-vite
+For more details, refer to this discussion: https://github.com/tailwindlabs/tailwindcss/discussions/15707
+tailwind css v3 documentaion: https://v3.tailwindcss.com/
+
+
+
+-------------------------------------------------------
+➡️For People watching offline after the new tailwind4 version, you might face an issue when installing with Kirat instructions so watch this to install tailwind in the vite+react project
+https://www.youtube.com/watch?v=sHnG8tIYMB4&t=48s
+
+
+----------------------------------------------------------
+For installing tailwind just follow the tailwind docs "https://tailwindcss.com/docs/installation/using-vite"
+
+
+
+----------------------------------------------------------
+1:15:10 -> 1:55:50 OTP LOGIC

@@ -1,0 +1,8 @@
+SOME COMMENT SECTIONS IMPORTANT REFs: 
+
+-------------------------------------------------------------------
+
+In new version of tailwind (Tailwind 4.0) , you don't need to write that extra DOM code and update the classList to change it to dark mode. Refer to this doc : https://tailwindcss.com/docs/dark-mode . It is much easier now
+
+-------------------------------------------------------------------
+
