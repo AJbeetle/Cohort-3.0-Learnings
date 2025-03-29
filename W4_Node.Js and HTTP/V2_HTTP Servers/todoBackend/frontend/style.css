@@ -1,0 +1,117 @@
+*{
+    margin:0px;
+    padding:0px;
+    /* background: linear-gradient(cyan, blue)  */
+}
+.container{
+    width: 1200px;
+    height: 1200px;
+    /* background : red; */
+    margin-left:auto;
+    margin-right:auto;
+}
+.main{
+    margin:50px 0px;
+    padding:10px;
+    /* background-color: blue; */
+    width:60%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.hidden{
+    opacity:0;
+}
+
+.create{
+    margin:30px;
+    display:flex;
+    /* border:1px solid red; */
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+}
+.contentTODO{
+    /* width:fit-content; */
+    width:auto;
+    /* width:70%; */
+    height:auto;
+    /* border: 3px solid black; */
+    padding: 10px;
+    margin:auto;
+}
+.labelTodo{
+    width:auto;
+    height:auto;
+    padding:10px;
+    margin:auto;
+}
+[class^="item"]{
+    display:flex;
+    justify-content: space-between;
+    margin-bottom:10px;
+    gap:10px;
+}
+.id{
+    /* margin-right:20px; */ 
+    text-align: left;
+    /* border: 1px solid black; */
+    width:10%;
+    height:100%;
+}
+.desc{
+    /* border: 1px solid black; */
+    width:90%;
+    text-align: left;
+    height:100%;
+}
+.cont{
+    display:flex;
+    /* border:1px solid red; */
+    /* justify-content: space-between; */
+    /* align-items: flex-start; */
+    /* flex-grow:2; */
+    width:80%;
+    /* gap:10px; */
+}
+.butt{
+    display:flex;
+    width:20%;
+    /* flex-grow:1; */
+    /* border:1px solid black; */
+    padding:5px;
+    justify-content:space-between;
+    align-items: center;
+    /* gap:10px; */
+}
+.butt > span{
+    width: 100%;
+    /* border:1px solid red; */
+}
+.one{
+    /* border:1px solid red; */
+    display:flex;
+    justify-content: flex-start;
+    align-items:center;
+    gap:10px;
+    width:90%;
+    
+}
+.completed{
+    text-decoration: line-through;
+}
+dialog{
+    position: relative;
+    align-items: center;
+    padding:20px;
+    display:flex;
+    justify-content: center;
+    width:fit-content;
+    /* height:200px; */
+    flex-direction: column;
+    gap:10px;
+    justify-content: center;
+    margin: auto;
+    
+}

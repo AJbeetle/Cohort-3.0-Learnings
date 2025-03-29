@@ -1,0 +1,169 @@
+HTTP : Hyper text transfer protocols
+
+HTTP Server 
+
+
+Libraries that let you create HTTP sevrers :-
+
+MERN : here E is for express
+SpringBoot for java full stcakdevelopers
+actix-web => Rust
+Gurrela => Go
+flask => python
+
+
+NodeJS process will use express library
+
+
+So, Playing with friends linux system :
+
+>> sudo vi /etc/host 
+
+here set the random ip for google.com say 1.2.3.4
+
+so everytime they search for google.com it points to this it is called domain name system (dns)  resolution
+
+
+So basically what we do create servers is :
+1. rent a server from say aws => which will provide you an IP : say 22.2.44.55
+2. buy a domain name say from godaddy => say it is "imkirat.com"
+3. then point your domain name to the ip address that you got
+
+Now : ports  : while this network communication online ports are not hardware entity or hardware endpoints 
+
+but these are logical endpoints used by protocols to identify specific processes running on a computer or server. They help direct traffic ti the correct application or service on a system.
+
+ports look like this => 22.56.77.22:433
+
+so 433 is port
+
+Now see apps.100xdevs.com and projects.100xdevs.com both are hosted on same machine and there it shows that both are at same port how possible 
+
+SO wahts happening under the hood is that there is a single process running on port 443 that realises where your request has come from and then redirects you to that website
+: REVERSE PROXY concept
+
+In real life if you ever go to google.com , or any other website it will always or generally be pointing to port 443,
+even if we create a website we will be deploying it on port 443, if it doesn't then it is bad/ugly or anti-pattern. When you run it locally , when http server is running locally then you can run on any port. So we will get back to it when we will start writitng our express code or htttp server
+
+
+METHODS : used to specify the type of action that client wants to perform on the server
+        : used to structure the request the client is sending
+
+
+So user can ask for data, change some data so you do basically CRUD operations : Create, Read, Update or Delete
+
+
+So, HTTP protocol says according to waht task you are gonna perform wth the website send me that kind of method request for this task 
+
+CREATE => POST request
+READ => GET request
+UPDATE => PUT request
+DELETE => DELETE request
+
+These above are four common methods we use HTTP servers to send requests
+
+
+Whenever your url starts from https your website by defualt is running in port 443
+
+Default ports for various things : 
+
+HTTP : 80
+HTTPS :  443
+SSH : 22
+
+Let's create our own HTTP server or let's implement the HTTP protocol and let's use express library for creating simple HTTP server
+
+Writing backend for todo app 
+
+So here is how it goes :
+1. We first will write the backend for the todo app
+2. Then we learn fetch, cors and we will write frontend for the app
+
+
+STEPS :
+1. Creating an node.js project create a foled and write node init -y and so forth
+2. bring an external library : express this time. So just write : >> npm install express
+3.
+
+--> how to clear cache on my system to do IP experiment :
+So, it is not system issue it is browser issue so somehow clear your browser cache
+
+HTTP vs HTTPS : HTTPS is secured version so in HTTP user requests are send in plane text format and anyone can sniff the packets and hence steal user information like userid and passwords
+
+
+Significance of 443 :
+
+see there are some default ports :
+1. HTTP => 80
+1. HTTPS => 443
+1. FTP => somethinf
+1. SSH => 22
+
+SSH : Secure Shell
+
+So, when you buy a server from say aws then in those cases they provide public IP which we point to a domain and can be accessed from any browser in world. But in cases when you want to access the servers shell from your local machine to run some shell commands like ls, pwd and cd.. etc. then in that case SSH (Secure Shell) Protocol is used.
+
+So http protocol is used for communicating browsers to servers 
+and SSh protocol is used for local machine to run Shell commands on survers
+
+
+
+so let's assume you rent some server on AWS and deploy your machine on port 3000 on that server then the problem that will occur is that when you hit your domain name having https protocol it will be default hit the 443 port of your AWS server but since your application is not running on that port this creates a problem, so it is a bad practice
+
+
+
+we can create frontend and backend at same localhost but we generally don't do it
+
+Node is JS runtime and Express is library that let's us create our http server
+similarly:-
+Python : flask
+Java   : SpringBoot
+Rust   : actix-web
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+_______________________________________________SOME important comments_________________________________
+
+Q. so if we have a server which hosts 2 websites for 2 different persons then port number will be same or not?
+Ans--> In the case of hosting multiple websites on the same server for different users, the port number for both websites can be the same—typically port 80 for HTTP or port 443 for HTTPS. However, the websites will be distinguished using their domain names.
+
+This method is called virtual hosting. Here's how it works:
+
+Virtual Hosting
+There are two common types of virtual hosting used in web servers:
+
+Name-Based Virtual Hosting (most common)
+IP-Based Virtual Hosting
+1. Name-Based Virtual Hosting (Shared IP)
+In name-based virtual hosting, multiple websites share the same IP address and port (typically port 80 or 443). The server uses the domain name from the client's request (via the Host header in the HTTP request) to serve the correct website.
+
+For example, a server can host:
+
+www.person1-website.com on port 80
+www.person2-website.com on port 80
+Even though they share the same IP address and port, when a request comes in for www.person1-website.com, the server recognizes the domain and delivers that website’s content. Similarly, for www.person2-website.com, it serves a different set of content.
+
+This is very efficient because the server doesn’t need separate IP addresses or ports for each website.
+
+2. IP-Based Virtual Hosting (Multiple IPs or Ports)
+In IP-based virtual hosting, each website has a unique IP address. Alternatively, each website can be hosted on different ports, but this is less common and typically not user-friendly because users would have to specify the port number in the URL (e.g., http://www.person1-website.com:8080).
+
+However, it’s more common to assign each website a unique IP address if needed:
+
+www.person1-website.com on IP 192.168.1.10 (Port 80)
+www.person2-website.com on IP 192.168.1.11 (Port 80)
+Which Is Used More?
+Name-based virtual hosting is most common because it allows hosting many websites on the same server, sharing the same IP address and port.
+IP-based virtual hosting may be used for websites requiring SSL certificates (though modern SSL certificates like SAN or wildcard certificates can cover multiple domains on the same IP).
+Summary
+Port numbers can be the same for multiple websites (usually port 80 for HTTP or port 443 for HTTPS).
+The web server uses domain names (through name-based virtual hosting) to distinguish between websites.
+This allows a server to host multiple websites on the same port without any conflict.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+template engine harkirat told : when back in time react was not a thing, there are another frameworks like ejs that allowed you to do frontend and backend directly in express. Don't use them no one uses them much . Back in the day we can use templating engines to do dynamic frontends inside express
+
+Template Engine : it is library used to show dynamic content on web page
+
+

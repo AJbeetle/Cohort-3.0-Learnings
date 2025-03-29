@@ -1,0 +1,148 @@
+---------------------------------------------
+NodeJS, Bun and JS Runtime
+---------------------------------------------
+
+NOdejs isn new tech and JS is very old thohugh as comparitvely
+
+Timeline was something somewhere like this :
+
+1997, 1998 => __netscape navigator__ : first browser even before chrome
+during this time JS came into existence so HTML,CSS and JS. HTML and CSS was only for websites but people realised JS is a little better than HTML and CSS and it is a scripting language it helps us to do mulitple dynamic things in your websites.
+
+So, people were like it is good JS works on frontend but it would be nice if it could be run on backend 
+like on cli :  node a.js could be done would be great (it was not able to be done before)
+
+SO, to solve that node came into existence 2012 or 2013 node cam into exitstence
+NOdeJs is an open source JS runtime allows you to execute JS on serverside . build on top of chrome V8 JS engine.
+
+
+Runtime is env where JS code is executed 
+
+Nodejs is one of many JS runtime 
+Js can run on various places depending on where you are executing it, we are using diff runtimes ,in backends we use one of them i.e. node runtime env
+
+Browsers provide us similar functionality JS engine : every browser has its own engine likechrome has V8, Mozilla has spiderMonkey and Safari has JavaScriptCore
+
+So, if your use browsers like edge or brave which are fork of chrome they will be using V8 engine to run JS
+
+SO when we are interpreting some JS code on browser then V8 engine is running it
+
+NodeJS people just did that they brought V8 engine in node runtime and added some more functionalities, so people can run JS on backends
+
+
+V8 was the only popular engine back then, but BUN is new one and gaining lot of popularity 
+
+NODEJS :  it is JS runtime that uses V8 engine
+BUN : It is competing with NOde.js, it is writing JS runtime from scratch diff language called ZIG.
+
+So, people are creating more of diff runtime that is more faster than node. SO earlier what was interpreted by V8 engine will now be interpreted by BUN  
+
+
+There is one more Deno / Dino
+
+writing nodejs project on your system
+see 1.using.js
+
+STEP 1 : starting nodejs project write following command in terminal (do all this is new folder i.e. proj folder )
+
+STEP 2 : go to that folder in terminal and run following commands
+ => npm init -y
+makes package.json file 
+SOmething he said  : deploying external package to npm registry
+two imp sections : scripts section and dependencies section
+
+STEP 3 : create index.js file in folder proj where your package.json fil would have been created 
+
+
+-------------------------------------------------------------
+NPM
+-------------------------------------------------------------
+NPM : node package manager 
+
+libraries = external packages = dependencies
+
+INTERNAL PACKAGES vs EXTERNAL PACKAGES
+
+Internal : packages that JS provides you by defualt we just require from JS we don't need to install it externally ex : fs, path , http
+
+
+gitbash : interface for bash commands
+wsl : windows subsystem for linux
+
+
+the code files to read in following order: 
+1. index.js
+2. index.mjs
+3. asignment.js
+4. test.js
+5. asgnCont.js
+6. aj.txt
+7. asgn2.js    simultaneously created a  :-
+8.todo.json file 
+9. basic.js
+
+
+thenable and promise
+
+thenable is an object that has then() function. All promises are thenable but not all thenable are promise
+
+many promis patterns like chaining and async await work with any thenable. forexamplt tou can use thenables in promis chain :
+
+const thenable =  {
+    then : function(onFulfilled){
+        setTimeout(()=>onFulfiled(42),10);
+    }
+};
+
+Promise.resolve()
+.then(()=>thenable)
+.then(v=>{
+    console.log(v);
+});
+
+
+OR 
+
+Promise.resolve(thenable)
+.then((v)=>{
+    console.log(v);
+})
+
+
+you can also use thenables with await
+
+async function main(){
+    const v = wait thenable;
+    console.log(v);
+}
+
+main();
+
+OR 
+
+(async ()=>{
+    const v = wait thenable;
+    console.log(v);
+})();
+
+
+
+In a Node.js application, npm start and npm run start are usually equivalent, but there are some nuances:
+
+npm start
+This is a shorthand command that executes the start script defined in your package.json file.
+If there is a start script defined in the scripts section of package.json, npm start will run it.
+If no start script is defined, npm start will default to running node server.js (if a server.js file exists in the root directory).
+
+npm run start
+This is a more explicit way to run any script defined in the scripts section of your package.json.
+It works the same as npm start when running the start script.
+However, npm run start can be used to run any other script as well, such as npm run test, npm run build, etc.
+
+Key Differences:
+Default Behavior: npm start has a default behavior of running node server.js if no start script is defined, whereas npm run start does not have this fallback.
+Clarity: Using npm run start is more explicit and consistent with how you would run other scripts, which might make your commands clearer when sharing them with others or in documentation.
+
+
+
+Instead of doing the import mumbo jumbo. Simply install a lower version of Chalk library which supports the require syntax.
