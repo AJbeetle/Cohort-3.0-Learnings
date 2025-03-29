@@ -1,0 +1,89 @@
+DOM : Document Object Model, it is a programming interface for web documents. It represents the structure of a web page as a tree of objects. Tree representation of objects
+
+How to create dynamic websites before react cmae into picture
+
+
+
+Dynamic Websites vs Static Websites.
+
+Dynamic Webiste______________________
+1. HTML that updates itself on the basis of user interaction
+2. Their content can update or modifies or added according to user interactions
+
+
+
+Static Website________________
+HTML that does not change
+
+
+Creating to do static app into dynamic app
+
+Four baisc things that you do while you make your webisgte dynamic is :
+1. Fetch 
+2. Update 
+3. Delete
+4. Add 
+5. Some Complex Queries
+
+[CRUD operations  :  Create, Read, Update and Delete]
+
+----------------------------------------------------
+FETCHING ELEMENTS
+----------------------------------------------------
+
+1. querySelector 
+2. querySelectorAll
+3. getElementbyId
+4. getElementByClassName
+5. getElementsByClassName
+
+
+___Writing Inline JS___ : Keep Scirpt tag at end of your design
+
+document object is made available to us by the browser(not by the nodejs)
+
+1. h = document.querySelector("h1")
+2. h.innerHTML
+3. in = document.querySelector("#todo1")
+
+
+
+-------------------------------------------------------
+UPDATING
+-------------------------------------------------------
+
+
+-------------------------------------------------------
+DELETING
+-------------------------------------------------------
+
+only complicated thing with deleting is that you cannot delete the element itself you need to go to its parent and then select the desired child to be deleted 
+
+1. removeChild : removes  a specific child of a parent 
+2. onclick
+
+
+------------------------------------------------------
+ADDING 
+------------------------------------------------------
+
+adding element can be done in two ways :
+1. createElement
+2. appendChild
+
+
+taught about ssh way of hacking into someones hosted machine timestamp : 2:00:42 till end 
+
+
+if your code renders differently on each browser with different font and sizes then you should use viewport thingy in head tag of html to get rid of ti
+its not about browsers also but depends on device somethign called ppi : i.e. every machine renders pixels a certain way
+
+see some dubt in image : zombieProcesses 
+ANSWER : just because somehting is deleted from the DOM it does not mean that it is deleated from the memory
+
+
+
+
+DOM ADVANCE : we will do advance dom manipulation, state management and reconciliation
+
+got to file : 2.basicToDo.html

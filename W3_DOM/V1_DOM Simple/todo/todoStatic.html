@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo</title>
+    <style>
+        *{
+            /* justify-items: center; */
+            margin-left:auto;
+            margin-right:auto;
+        }
+        .container{
+            width:1200px;
+            /* border: 1px solid red; */
+        }
+        .content{
+            /* border:1px solid green; */
+            width:100%;
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            /* justify-content: center; */
+        }
+        .form{
+            width:100%;
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            /* border:1px solid red; */
+        }
+        hr{
+            width: 100%;
+        }
+        /* li{
+            display:flex;
+        } */
+    </style>
+    <scirpt src="./sc.js"></scirpt>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="Date">
+                <h1>
+                    Date : 30-12-2024, MONDAY
+                </h1>
+            </div>
+            <div class="Todos">
+                <div>
+                    <ol class="towork">
+                        <li id="todo1">
+                            <div>
+                                To wake up at 4 am
+                            </div>
+                            <button onclick="doneToDo(1)"> Done</button>
+                            <button onclick="EditToDo(1)"> Edit</button>
+                            <button onclick="deleteToDo(1)"> Delete</button>
+                        </li>
+                        
+                        <li id="todo2">
+                            <div>
+                                Watch Sunrise
+                            </div>
+                            <button onclick="doneToDo(2)"> Done</button>
+                            <button onclick="EditToDo(2)"> Edit</button>
+                            <button onclick="deleteToDo(2)"> Delete</button>
+                        </li>
+                        <li id="todo3">
+                            <div>
+                                Drink lots of water
+                            </div>
+                            <button onclick="doneToDo(3)"> Done</button>
+                            <button onclick="EditToDo(3)"> Edit</button>
+                            <button onclick="deleteToDo(3)"> Delete</button>
+                        </li>
+                        <li id="todo4">
+                            <div>
+                                Random
+                            </div>
+                            <button onclick="doneToDo(4)"> Done</button>
+                            <button onclick="EditToDo(4)"> Edit</button>
+                            <button onclick="deleteToDo(4)"> Delete</button>
+                        </li>
+                        <li id="todo5">
+                            <div>
+                                deleting this child in future
+                            </div>
+                            <button onclick="doneToDo(5)"> Done</button>
+                            <button onclick="EditToDo(5)"> Edit</button>
+                            <button onclick="deleteToDo(5)"> Delete</button>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="form">
+                <input type="textarea" placeholder="add your todo here"class="addTodo">
+                <!-- <input type="submit" value="Add your todo"> -->
+                <button onclick="addToDo()">Add to do</button>
+                <br>
+                <hr>
+                <h2>Create Todos for another day</h2>
+                Select Date : <input type="date" class="date">
+                <br>
+                <br>
+                <input type="textarea" placeholder="add your todo here"class="addTodo">
+                <button>Add to do</button>
+                <!-- <input type="submit" value="Add your todo"> -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // var a = "aayushi";
+        // console.log(a);
+
+        /// Step 1 : Reading content : accessing objects from the DOM
+
+        console.log(document)
+        // let inp = document.querySelector("input");
+
+        // let vl = inp.value;
+        // console.log(vl);
+
+        function addToDo(){
+            let inp = document.querySelector("input");
+            let v1 = inp.value;
+            console.log(v1);
+            let h  = document.querySelector(".towork").querySelectorAll("li").length;
+            console.log(h);
+            let newList = document.createElement("li");
+            // newList.setAttribute("id","todo"+v1[0]);
+            // newList.innerHTML = `<div>${v1}</div>
+            // <button onclick="doneToDo(${v1[0]})"> Done</button>
+            // <button onclick="EditToDo(${v1[0]})"> Edit</button>                
+            // <button onclick="deleteToDo(${v1[0]})"> Delete</button>`;
+
+            newList.setAttribute("id","todo"+(h+1));
+            newList.innerHTML = `<div>${v1}</div>
+            <button onclick="doneToDo(${h+1})"> Done</button>
+            <button onclick="EditToDo(${h+1})"> Edit</button>                
+            <button onclick="deleteToDo(${h+1})"> Delete</button>`;
+            console.log(newList);
+            document.querySelector(".towork").appendChild(newList);
+
+        }
+
+        let m = document.querySelectorAll("input")
+        console.log(m);
+        console.log(m[1]);
+        let p = document.querySelector("#todo4 > div");
+        console.log(p.innerHTML);
+        
+        // counter that updates till 5 sec the 4th random todo
+/* 
+        let count = 1;
+        let int = setInterval(()=>{
+            // let p = documen  t.querySelector("#todo4");
+            // p.innerHTML = count
+            if(count==5){
+                clearInterval(int);
+            }
+            document.querySelector("#todo4 > div").innerHTML = count;
+            console.log(count);
+            count++;
+            setTimeout(()=>{
+                console.clear();
+            },500);
+        },1000); */
+
+        function doneToDo(index){
+            let p = document.getElementById("todo"+index).querySelector("div");
+            p.innerHTML = p.innerHTML+" : DONE";
+            // console.log(document.getElementById("todo"+index).querySelector("div").innerHTML+"aausiho");
+        }
+
+        function deleteToDo(index){
+            let q = document.getElementById("todo"+index).querySelector("div")
+            console.log(q);
+            console.log(q.parentNode);
+            console.log(q.parentNode.parentNode);
+            // q.parentNode.removeChild(q);
+            q.parentNode.parentNode.removeChild(q.parentNode);
+        }
+
+        function editToDo(index){
+            let c = document.getElementById("todo"+index)
+        }
+    </script>
+    
+</body>
+</html>

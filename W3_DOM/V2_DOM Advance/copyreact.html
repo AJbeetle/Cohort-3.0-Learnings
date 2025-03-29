@@ -1,0 +1,92 @@
+<html>
+    <head></head>
+    <body>
+        <ol id="todoContainer">
+        </ol>
+        <input type="text" id="input">
+        <button onclick="addToDo()">Add To Do </button>
+        <button onclick="delLastToDo()">Delete Last to Do </button>
+        <button onclick="delFstToDo()">Delete first To Do </button>
+        <script>
+            // We need to write a function called render that user can invoke juts like react and update the component depnding upon the state
+            let todo = [];  // STATE in react
+ 
+            function addToDo(){
+                todo.push({
+                    // id : todo.length+1,
+                    content : document.querySelector("#input").value
+                })
+                render();
+            }
+
+            //Try do following : delete button across the todos
+            function delTodo(index){
+                todo.splice(index-1,1);
+                render();
+            }
+
+            function delLastToDo(){
+                todo.splice(todo.length-1,1);
+                render();
+            }
+
+            function delFstToDo(){
+                todo.splice(0,1);
+                render();
+            }
+
+            // In react we will create something like below  : see file copyreact.html
+
+            // COMPONENT is what we write in react and RENDER function is something that react provides us to update DOM and todo is a STATE that will change accordingly
+
+
+            //COMPONENT in react
+            function createToDoComponent(todo, index){
+                let id = index;
+                let val = todo.content;
+                let newList = document.createElement("li");
+                let divEl = document.createElement("div");
+                let but1 = document.createElement("button");
+                let but2 = document.createElement("button");
+                let but3 = document.createElement("button");
+                divEl.innerHTML = val;
+                newList.setAttribute("id", `todo${id}`);
+                but1.setAttribute("onclick",`delTodo(${id})`);
+                but2.setAttribute("onclick",`editTodo(${id})`);
+                but3.setAttribute("onclick",`doneTodo(${id})`);
+                but1.innerHTML = "DELETE";
+                but2.innerHTML = "EDIT";
+                but3.innerHTML = "DONE";
+                newList.appendChild(divEl);
+                newList.appendChild(but1);
+                newList.appendChild(but2);
+                newList.appendChild(but3);
+                return newList;
+            }        
+
+
+            // REMDER FUNCTION by react
+            function render(){
+                document.querySelector("#todoContainer").innerHTML="";
+                for(let i = 0; i< todo.length;i++){
+                    const el = createToDoComponent(todo[i],i+1);
+                    document.querySelector("#todoContainer").appendChild(el);
+                }
+            }
+
+            /* 
+             Now approach is very brute force and very basic when react does the DOM manipulation on the basis of state variable changes or updates.
+
+             What react does DOM manipulation it finds out the difference between our previous DOM and updated DOM and only updates the updated states, its called reconciliation 
+
+             The process of finding the diff between old state and new state is called reconciliation.
+
+             So react does reconciliation for us in very effective manner
+
+             if you do so many DOM manipulations tooo fast then react takes it as batch and then finally processes it to Manipulated DOM
+            */
+
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,107 @@
+<html>
+    <head></head>
+    <body>
+        <ol id="todoContainer">
+        </ol>
+        <input type="text" id="input">
+        <button onclick="addToDo()">Add To Do </button>
+        <script>
+            // We need to write a function called render that user can invoke juts like react and update the component depnding upon the state
+            let opern;
+            let ind;
+
+            let todo = [];
+
+            // state and component two things we need to take care of should look something like this :
+            /* 
+            state: 
+            let todo =[{
+                id:1,
+                content:"Hello"
+
+            }, {
+                id:2,
+                content:"Hi There"
+            }]
+
+            component :
+            function toDoComponent(){
+                const div = doucment.createElement("div");
+                const h1 = document.createElement("h1");
+                const button = document.createElement("button");
+                div.setAttribute("id",todo[0].id);
+                h1.innerHTML = todo[0].content;
+                button.setAttribute("onclick", `deleteToDo(${todo[0].id})`);
+                button.innerHTML = "DELETE";
+                div.appendChild(h1);
+                div.appendChild(button);
+            }
+
+            */
+
+            function addToDo(){
+                todo.push({
+                    id : todo.length+1,
+                    content : document.querySelector("#input").value
+                })
+                opern="add";
+                render();
+            }
+
+            function delTodo(index){
+                ind = index;
+                opern="del";
+                render();
+            }
+
+            function render(){
+                function add(){
+                    document.querySelector("#todoContainer").innerHTML="";
+                    for(let i = 0; i<todo.length;i++){
+                        let id = todo[i].id;
+                        let val = todo[i].content;
+                        let newList = document.createElement("li");
+                        let divEl = document.createElement("div");
+                        let but1 = document.createElement("button");
+                        let but2 = document.createElement("button");
+                        let but3 = document.createElement("button");
+                        divEl.innerHTML = val;
+                        newList.setAttribute("id", `todo${id}`);
+                        but1.setAttribute("onclick",`delTodo(${id})`);
+                        but2.setAttribute("onclick",`editTodo(${id})`);
+                        but3.setAttribute("onclick",`doneTodo(${id})`);
+                        but1.innerHTML = "DELETE";
+                        but2.innerHTML = "EDIT";
+                        but3.innerHTML = "DONE";
+                        newList.appendChild(divEl);
+                        newList.appendChild(but1);
+                        newList.appendChild(but2);
+                        newList.appendChild(but3);
+    
+                        document.querySelector("#todoContainer").appendChild(newList);
+                    }
+                }
+
+                function del(){
+                    let realIndex = ind-1;
+                    todo.splice(realIndex,1);
+                    add();
+                    console.log(todo);
+
+                }
+                
+                if(opern=="add"){
+                    add();
+                }
+                else if(opern == "del"){
+                    del();
+
+                }
+            }
+
+            // In react we will create something like below  : see file copyreact.html
+
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,43 @@
+if we don't make our own mini framework like react or view it will be very hard for use to maintain code in the vanilla dom manipulation way
+
+
+COMPLEX DOM MANIPULATION
+
+1. Creating a dom object that have another object inside of it
+
+If want to be more into old frameworks doe : jquery Or Backbonejs
+
+What we have done till now in DOM manipulation is very complex and gets very hard as we grow our porject , here we need to understand concept of state and components
+
+
+write somewhere in 2012 or something people decided this old way is not the way to fgo for complex frontend websites so they decided to create something like react or called react basically to make it easy to do all such things
+
+
+So actually updating the DOM will be done by frameworks , developers only need to care about state and components
+
+people may have heard of use react hook, state management libraries like redux, recoil
+
+-------------------------------------------------------------------------------------
+STATE DERIVED FRONTENDS
+-------------------------------------------------------------------------------------
+
+To make frontend easier to code, the concept of state came into the picture. You will see this more when we reach react.
+
+There are three jargon we need to understand
+1. State  :  The variable parts of an app, its like data we will feed to wireframe
+2. Components : How to render state on screen, its like a wireframe
+3. Rendering : Teking the state ams rendering it on the DOM based on the components
+
+
+our life as frontend engineer would be very easy if : 
+function DoneToDo(){
+    todo.push({
+        title : document.qierySelector("input").value;
+    })
+}
+
+
+no need to learn DOM manipulation more or jquery or other dom manipulation as it has no relevant anymore now in industry
+
+
+solana doubt from 2:02 time stamp

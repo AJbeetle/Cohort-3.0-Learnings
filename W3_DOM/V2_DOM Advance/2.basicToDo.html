@@ -1,0 +1,101 @@
+<html>
+    <head></head>
+    <body>
+        <ol class="todo">
+        </ol>
+        <input type="text" id="input">
+        <button onclick="addToDo()">Add To Do </button>
+        <script>
+            // We need to write a function called render that user can invoke juts like react and update the component depnding upon the state
+            let state;
+            let opern;
+            let ind;
+            function addToDo(){
+                // todo.push({
+                //     title:document.querySelector("#input").value.trim()
+                // })
+                state=document.querySelector("#input").value.trim();
+                opern="add";
+                render();
+            }
+
+            function deleteToDo(index){
+
+                // so you just need to call functions and their operators to do some taks you donot need to write any DOM logic that is the idea of writing a react kind of framework for yourself
+                // delete todo[index]
+
+                ind = index; //global variable
+                opern= "del"
+                render();
+            }
+
+            function render(){
+
+                function add(){
+                    // console.log(1);
+                    // console.log(todo[todo.length-1].title);
+                    let len = document.querySelector(".todo").querySelectorAll("li").length;
+
+                    let divEl = document.createElement("div");
+                    // divEl.innerHTML = todo[todo.length-1].title;
+                    divEl.innerHTML = state;
+                    
+                    let btEl1 = document.createElement("button");
+                    // btEl1.setAttribute("onclick",`doneToDo(${todo.length})`);
+                    btEl1.setAttribute("onclick",`doneToDo(${len+1})`);
+                    btEl1.innerHTML = "DONE"
+                    
+                    let btEl2 = document.createElement("button");
+                    // btEl2.setAttribute("onclick",`deleteToDo(${todo.length})`);
+                    btEl2.setAttribute("onclick",`deleteToDo(${len+1})`);
+                    btEl2.innerHTML = "DELETE"
+                    
+                    let btEl3 = document.createElement("button");
+                    // btEl3.setAttribute("onclick",`updateToDo(${todo.length})`);
+                    btEl3.setAttribute("onclick",`updateToDo(${len+1})`);
+                    btEl3.innerHTML = "UPDATE"
+
+                    let newList = document.createElement("li");
+                    // newList.setAttribute("id","todo"+todo.length);
+                    newList.setAttribute("id","todo"+(len+1));
+                    
+                    newList.appendChild(divEl);
+                    newList.appendChild(btEl1);
+                    newList.appendChild(btEl2);
+                    newList.appendChild(btEl3);
+
+                    document.querySelector(".todo").appendChild(newList);
+
+                }
+
+                function del(){
+
+                    // gives some problem with incosistency in todo array while deletion of mid todos
+
+                    /* console.log(document.querySelector(".todo"));
+                    console.log(ind-1);
+                    // delete todo[ind-1];   // it does not remove the element from todo from that index instead just makes it empty
+                    todo.splice(ind-1,ind-1);
+                    console.log(todo);
+                    let el = document.getElementById("todo"+ind);
+                    el.parentNode.removeChild(el);
+
+                    ind = ind-1; */
+
+                    // Another simple approach
+                    let el = document.getElementById("todo"+ind);
+                    el.parentNode.removeChild(el);
+
+                }
+
+                if( opern == "add"){
+                    add();
+                }
+                else if (opern == "del"){
+                    del();
+                }
+
+            }
+        </script>
+    </body>
+</html>

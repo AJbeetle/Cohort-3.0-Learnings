@@ -1,0 +1,37 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <input type="text" id="newToDo" >
+        <button onclick="addToDo()">Add ToDo!</button>
+        <ol id="todoList">
+
+        </ol>
+
+        <script>
+            function addToDo(){
+                let text = document.querySelector("#newToDo").value;
+                let len = document.querySelector("#todoList").querySelectorAll("li").length;
+                let ls = document.createElement("li");
+                console.log(ls);
+                ls.setAttribute("id","todo"+(len+1));
+                ls.innerHTML = `
+                <div>${text}</div>
+                <button onclick="editToDo(${len+1})">Edit</button>
+                <button onclick="deleteToDo(${len+1})">Delete</button>
+                <button onclick="updateToDo(${len+1})">Update</button>
+                ` ;
+                document.querySelector("#todoList").appendChild(ls);
+            }
+
+            function deleteToDo(index){
+                // console.log("deleted")
+                let del = document.getElementById("todo"+index);
+                console.log(del);
+                del.parentNode.removeChild(del);
+            }
+        </script>
+    </body>
+
+</html>
