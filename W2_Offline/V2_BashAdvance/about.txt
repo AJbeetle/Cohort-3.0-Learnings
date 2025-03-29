@@ -1,0 +1,88 @@
+Bash (Bourne Again Shell) : Command Line interprter that lets you interact with OS
+
+Learning Advance Terminal Commands:
+1.pwd
+2.ls 
+   -> -l : listing all items in detailed format
+   -> -R : to viw directprires with directories (recursively list all directories and content in them)
+   -> -t : timestamp of last modified
+   -> -a : for hidden files
+   -> -r : in reverse order
+   -> -s : size of contents
+
+3. grep command    
+-> ls -l | grep .txt
+-> ls *.txt
+-> ls B*
+-> ls .. -> all directories and content in present directory level
+
+
+4. cd command
+5. cat Commandc
+6. mkdir
+   recursively creating directories :
+   -> mkdir -p frontend/css
+
+7. mv 
+   -> moving files from one place to another
+   -> renaming files/ folders
+
+8. cp   
+   -> -r : copy all items in directory recursively
+   ->    
+
+9. rm : removing folder or files
+   -> -r
+
+10. chmod : change permissions
+11. echo
+12. head filename : first 10 rows of the file
+13. tail filename : alst 10 rows of the file
+14. line 10 till 15 : tail -n +10 newFile.txt | head -5
+15. wc newFile.txt 
+    OUTPUT is :  noOfLine noOfWords noOfChars fileName 
+16. grep : find occurence of words, phrases, expression etc
+    grep "one" newFIle.txt
+    -> -c : number of times something occured
+    -> -h : matched lines
+    -> -i : removes case sensitivty and searchs for all possible matches
+    -> -r : recursively checking for occurence in a diurectory
+    -> -w : matching whle word 
+    -> -o : only gives the matched part
+    -> -n : gives the line number
+
+17. history of all commmands done :   type "history"
+18. Scripting 
+
+19. installing node.js in system
+node.js : It si open source server environmwent use JS as server, uses asynchronous programming
+see image soem confusing shit she did
+
+20. sed and awk Commands
+
+-> SED COMMAND 
+
+grep : good for pattern matching and finding stuff
+sed : does all what grep can do but also have substitution feature that you can update of modify the existing file
+awk : most powerful tool is scripting language in itself have many features like arithmetic operations, comparisions, custom fetching of files and bunch of different things.
+
+ > grep "ERROR" log.txt
+ > grep -v "ERRPR" log.txt : everything other than ERROR
+ > grep -A 1 "ERRPR" log.txt : one line after ERRROR messages
+ > grep -B 1 "ERRPR" log.txt : one line before ERROR messagess
+ > grep -C 1 "ERRPR" log.txt : both before and after
+
+
+SED
+  -> sed -n '/ERROR/ p' log.txt
+  -> sed 's/ERROR/CRITICAL/' log.txt : replacing error by critical, not permanent change only for that moment of time or that instance
+  -> sed -ibackup 's/ERROR/CRITICAL/' log.txt  : backup file created with the original content 
+  -> sed '3,7 s/CRITICAL/VERYCRITICAL/' log.txt : changing from lines 3to 7
+
+
+AWK 
+: see image in folder
+
+
+
+ALL COMMANDS ARE RUN in V1_BashandTerminal folder : inside aayushi/aayushi/ OR aayushi/aayushichild
