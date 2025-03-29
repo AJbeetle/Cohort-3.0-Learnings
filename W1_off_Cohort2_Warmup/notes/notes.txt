@@ -1,0 +1,46 @@
+1. Popular tags in html
+   tags give better structure to our website
+   - <html>
+   - <head>
+   - <title>
+   - <body>
+   - <div> 
+   - <span>
+   - <h1>...<h6>
+   - <p>
+   - <img>
+   - <a>
+   - <input>
+   - <button>
+   - <b> | <i>
+   - <hr> | <br>
+   - <center>
+
+2. Some Basic Attributes 
+   - <img src="">
+   - <a href="" target=""></a>
+   - <button onclick=""></button>
+   - <input id="username">
+
+   here src, href, target, onclick and id are attributes
+
+   tags are top level elements that define th   e structure, each tag can have multiple attributes and attribures help define what specific tag should do
+
+
+3. CSS : helps styling an positioning elements on page 
+
+4. Some common CSS tags 
+    - color
+    - background 
+    - border 
+    - border-radius
+    - padding 
+    - margin
+    - box-shadow
+    - font-size
+
+
+5. box-shadow : 2px 10px 10px black;
+
+6. positioning using CSS 
+    -
