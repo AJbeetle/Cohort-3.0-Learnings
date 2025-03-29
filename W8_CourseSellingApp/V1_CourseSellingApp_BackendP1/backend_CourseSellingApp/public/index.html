@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="apiCall()">SUBMIT</button>
+    <button onclick="signin()">SIGNIN</button>
+    <button onclick="courses()">COURSES</button>
+    <Script>
+        async function apiCall(){
+            // Fetch user's public IP address
+            const res = await fetch("https://api64.ipify.org?format=json");
+            const data = await res.json();
+            const userIP = data.ip; // Extract IP
+
+            const t = new Date();
+            const time = t.getTime();
+            // console.log(time);
+            
+            const token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3YjlhNWZlYWM4ODE3ZDlkOTVkNTM1MyIsInRpbWVzdGFtcCI6MTc0MDMxMzg3OTYwNCwiaWF0IjoxNzQwMzEzODc5fQ.Xqm0Klnb0rlSgY7189M8hh5t7Tq3Jmy5Cgka38aAhEk"
+            const response = await fetch("http://localhost:3000/api/v1/user/purchases",{
+                method : "get",
+                credentials : "include",
+                headers : {
+                    time : time,
+                    token : token,
+                    ip : userIP
+                }
+            })
+
+        }
+
+        async function signin(){
+            const res = await fetch("http://localhost:3000/api/v1/user/signin",{
+                method : "POST",
+                headers : {
+                    "content-type" : "application/json"
+                },
+                credentials : "include",
+                body : JSON.stringify({
+                           "email" : "new.user@gmail.com",
+                           "password" :  "newUser234@#"
+                       })
+            })
+        }
+        async function courses(){
+            const res = await fetch("http://localhost:3000/api/v1/user/purchases",{
+                method : "GET",
+                credentials : "include"
+            })
+        }
+    </Script>
+</body>
+</html>
