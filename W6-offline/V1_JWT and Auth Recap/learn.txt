@@ -1,0 +1,25 @@
+JWT and TRY CATCH
+
+assignment from cohort 2
+1. generating JWT
+2. Decoding JWT
+3. Verifying JWT
+
+1.
+
+const token = jwt.sign("data","JWT SECRET")
+
+2.
+
+const tokenData = jwt.decode(token); // only gets the data does not verify the user that is trying to extract data
+
+3.
+
+const tokenDataAndVerify = jwt.verify(token, "JWT SECRET")
+
+
+TRY CATCH ========================================
+
+throwing and catching errors 
+
+DONE : Assignment from cohort 2 , week3 JWT

@@ -1,0 +1,25 @@
+There are two types of databases :  SQL and NoSQl
+
+There are many SQL and NoSQL databases 
+
+One of NoSQl databse is MongoDB : try to get free mongoDB instance 
+
+
+1. Goto mongoDB website 
+2. signin 
+3. build a database
+4. select M0, select either AWS and all, select whatever region you want and name it then click on create
+5. Now in next page select username and password and set the credentials as per your choice [autogenerate password also copy it and save]
+
+6. put ip : 0.0.0.0/0 and description : everywhere //this makes sure your database can be accessed from everywhere 
+ you can also add your current ip, but since your ip can change more often so you may see that you find difficulty in connecting to your mongodb instance
+
+7. finally add entry
+8. click on finish and close
+9. click on connect and click on compass
+10. click on I don;t have compass locally and install
+11. copy the URL for MongoDB instance and you need to replace username and password 
+
+12. paste it in mongodb compass and replace the username and password here 
+
+13. if you reach final page on mongoDB cluster then your mongoDB is ready
