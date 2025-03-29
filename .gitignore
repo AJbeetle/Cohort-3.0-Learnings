@@ -1,0 +1,123 @@
+# Week1-Orientation ------------------------------------------------------------
+
+W1_Class-Orientation/V1-WebDev and Devops Orientation/notes/HTML,CSS and cloning.pdf
+
+W1_Class-Orientation/V1-WebDev and Devops Orientation/Screenshots
+
+W1_Class-Orientation/V2-Basics of JS/node_modules
+
+W1_Class-Orientation/V2-Basics of JS/notes/BasicsOfJS.pdf
+
+W1_Class-Orientation/V2-Basics of JS/screenshots
+
+
+# Week1-Offline-Warmup ------------------------------------------------------------
+W1_off_Cohort2_Warmup/screenshots
+
+
+# Week2-AsyncJS ------------------------------------------------------------
+
+W2_AsyncJS/V1_Async JS/screenshots
+W2_AsyncJS/V2_Promises/screenshots
+
+# W2_Offline ------------------------------------------------------------
+
+# W2_Offline/V1_BashandTerminal
+
+# W2_Offline/V2_BashAdvance
+
+# W2_Offline/V3_InstallingNode and doing Assignments
+
+# W2_Offline/V4_VsCodeAssignment
+
+# W2_Offline/V5_CallbackHell,Rejects and ASync Await
+
+# Week3-DOM ------------------------------------------------------------
+
+# W3_DOM/V1_DOM Simple
+W3_DOM/V2_DOM Advance/screenshots_someThingsHarkiratDidTakeALook
+
+
+# W4-NodeJs and HTTP ------------------------------------------------------------
+
+W4_Node.Js and HTTP/V1_NodeJs,Bun and JS runtime/proj/node_modules
+W4_Node.Js and HTTP/V2_HTTP Servers/todoBackend/node_modules
+
+# W4-Offline ------------------------------------------------------------
+
+W4_offline/V1_HTTP and Express/node_modules
+W4_offline/V2_Middlewares/simpleExpressApp/node_modules
+
+# W5-HTTP and Middlewares ------------------------------------------------------------
+W5_HTTP and Middlewares/V1_Header,QueryParamsANDExpress/learn1/node_modules
+W5_HTTP and Middlewares/V2_MiddlewaresAndCors/code/node_modules
+W5_HTTP and Middlewares/V2_MiddlewaresAndCors/inClassAssign/node_modules
+
+# W5-offline ------------------------------------------------------------
+
+# W5_Offline/V1_GitandGithub
+# W5_Offline/V2_Map_Filter_ArrowFunction
+W5_Offline/V3_Axios_vs_Fetch/node_modules
+
+# W6-HTTP Deep Dive ------------------------------------------------------------
+
+W6/V1_HTTPDeepDive/backend/node_modules
+W6/V2_AuthAndConnectingFEtoBE/backend/node_modules
+W6/V2_AuthAndConnectingFEtoBE/todoFullStack/backend/node_modules
+
+# W6-offline ------------------------------------------------------------
+
+# W6-offline/V1_JWT and Auth Recap
+# W6-offline/V2_MongoInstallation
+
+# W7-mongoDB ------------------------------------------------------------
+
+W7_MongoDB/V1_MongoDB/.env
+W7_MongoDB/V1_MongoDB/LearningBackend/node_modules
+W7_MongoDB/V2_Passwords, ZOD/mongoBasicDB/node_modules
+W7_MongoDB/V2_Passwords, ZOD/mongoBasicDB/.env
+
+# W8-CourseSellingApp ------------------------------------------------------------
+
+W8_CourseSellingApp/V1_CourseSellingApp_BackendP1/.png
+W8_CourseSellingApp/V1_CourseSellingApp_BackendP1/backend_CourseSellingApp/.env
+W8_CourseSellingApp/V1_CourseSellingApp_BackendP1/backend_CourseSellingApp/node_modules
+W8_CourseSellingApp/V1_CourseSellingApp_BackendP1/backend_CourseSellingApp/node_modules
+
+# W8_CourseSellingApp/V2_CourseSellingApp_BackendP2
+
+
+# W8-offline ------------------------------------------------------------
+# W8_Offline/V1_Mongo Deep Dive
+
+# ----------------------------CUSTOMISE THIS PART LATER--------------------------------------------------------------------
+
+# W9-React ------------------------------------------------------------
+W9_React/V1_React Basics
+W9_React/V2_React UseState
+W9_React/V3_Recorded_React from basics
+W9_React/V4_React from Basics_Part2
+
+# W10-React_P2  ------------------------------------------------------------
+
+W10_React_P2/V1_SPAs_Routing
+W10_React_P2/V2_ContextAPI_RollingUpTheState
+
+# W11-React_P3 ------------------------------------------------------------
+
+W11_React_P3/V1_CustomHooks
+W11_React_P3/V2_Recoil
+W11_React_P3/V3_RecoilDeep
+
+# W12-UI/UX ------------------------------------------------------------
+W12_UI-UX/V1_UI_UX_PremitivesByKeshav_P1
+W12_UI-UX/V2__UI_UX_PremitivesByKeshav_P2
+
+# W13-tailwind ------------------------------------------------------------
+W13_Tailwind/V1_Tailwind_P1
+W13_Tailwind/V2_Tailwind_P2
+
+# W14-typescript ------------------------------------------------------------
+W14_TypeScript/V1_TS_P1
+W14_TypeScript/V2_TS_P2
+W14_TypeScript/V3_TS_advance

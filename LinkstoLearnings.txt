@@ -1,0 +1,7 @@
+1. JavaScript 101 : https://projects.100xdevs.com/tracks/javascript-1/Javascript-101-1
+2. Asynchronous JS, callbacks and more : https://projects.100xdevs.com/tracks/async-js-1/Asynchronous-Javascript--Callbacks-and-more-2
+3. A continum journal : https://salmoneatenbybear.github.io/Cohort_3.0_Cournal_x/
+3a. concurrency vs parallelism video : https://www.youtube.com/watch?v=oV9rvDllKEg&ab_channel=gnbitcom 
+3b. loupe event loop : https://www.youtube.com/watch?v=8aGhZQkoFbQ&t=536s&ab_channel=JSConf
+4. Promises and async-await : https://projects.100xdevs.com/tracks/promises-async-await/Promises-and-async--await-1
+5. Web3 notes :20 https://feather-lion-ff2.notion.site/100xDevs-Cohort-3-Web3-Resource-7eebc2510a754899a579331e174c4a31
