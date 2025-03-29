@@ -79,7 +79,7 @@ W7_MongoDB/V2_Passwords, ZOD/mongoBasicDB/.env
 
 # W8-CourseSellingApp ------------------------------------------------------------
 
-W8_CourseSellingApp/V1_CourseSellingApp_BackendP1/.png
+# W8_CourseSellingApp/V1_CourseSellingApp_BackendP1/png
 W8_CourseSellingApp/V1_CourseSellingApp_BackendP1/backend_CourseSellingApp/.env
 W8_CourseSellingApp/V1_CourseSellingApp_BackendP1/backend_CourseSellingApp/node_modules
 W8_CourseSellingApp/V1_CourseSellingApp_BackendP1/backend_CourseSellingApp/node_modules
@@ -90,34 +90,49 @@ W8_CourseSellingApp/V1_CourseSellingApp_BackendP1/backend_CourseSellingApp/node_
 # W8-offline ------------------------------------------------------------
 # W8_Offline/V1_Mongo Deep Dive
 
-# ----------------------------CUSTOMISE THIS PART LATER--------------------------------------------------------------------
+
 
 # W9-React ------------------------------------------------------------
-W9_React/V1_React Basics
-W9_React/V2_React UseState
-W9_React/V3_Recorded_React from basics
-W9_React/V4_React from Basics_Part2
+# W9_React/V1_React Basics/
+W9_React/V2_React UseState/vite/basicUnstyledReact/node_modules
+W9_React/V3_Recorded_React from basics/Basics/node_modules
+W9_React/V4_React from Basics_Part2/learningBasicTwo/node_modules
 
 # W10-React_P2  ------------------------------------------------------------
 
-W10_React_P2/V1_SPAs_Routing
-W10_React_P2/V2_ContextAPI_RollingUpTheState
+W10_React_P2/V1_SPAs_Routing/SPA/node_modules
+W10_React_P2/V2_ContextAPI_RollingUpTheState/contextAPILearn/node_modules
 
 # W11-React_P3 ------------------------------------------------------------
 
-W11_React_P3/V1_CustomHooks
-W11_React_P3/V2_Recoil
-W11_React_P3/V3_RecoilDeep
+W11_React_P3/V1_CustomHooks/customHooksLearning/node_modules
+W11_React_P3/V1_CustomHooks/CustomHooksLearningAgain/customHooks/node_modules
+W11_React_P3/V2_Recoil/recoilLearn/node_modules
+W11_React_P3/V3_RecoilDeep/KiratsRepoForLearning/
+W11_React_P3/V3_RecoilDeep/MyLearning/backend/node_modules
+W11_React_P3/V3_RecoilDeep/MyLearning/recoilAdvance/node_modules
+
+# ----------------------------CUSTOMISE THIS PART LATER--------------------------------------------------------------------
 
 # W12-UI/UX ------------------------------------------------------------
-W12_UI-UX/V1_UI_UX_PremitivesByKeshav_P1
-W12_UI-UX/V2__UI_UX_PremitivesByKeshav_P2
+W12_UI-UX/V1_UI_UX_PremitivesByKeshav_P1/*.png
+# W12_UI-UX/V2__UI_UX_PremitivesByKeshav_P2
 
 # W13-tailwind ------------------------------------------------------------
-W13_Tailwind/V1_Tailwind_P1
-W13_Tailwind/V2_Tailwind_P2
+W13_Tailwind/V1_Tailwind_P1/frontend/homework/node_modules
+W13_Tailwind/V1_Tailwind_P1/frontend/homework_more/node_modules
+W13_Tailwind/V1_Tailwind_P1/*.png
+W13_Tailwind/V2_Tailwind_P2/*.png
+W13_Tailwind/V2_Tailwind_P2/responsivePage/node_modules
 
 # W14-typescript ------------------------------------------------------------
-W14_TypeScript/V1_TS_P1
-W14_TypeScript/V2_TS_P2
-W14_TypeScript/V3_TS_advance
+W14_TypeScript/V1_TS_P1/*.png
+W14_TypeScript/V1_TS_P1/learningTS/dist
+W14_TypeScript/V1_TS_P1/learningTS/node_modules
+
+W14_TypeScript/V2_TS_P2/*.png
+W14_TypeScript/V2_TS_P2/Learn/node_modules
+W14_TypeScript/V2_TS_P2/Learn/dist
+W14_TypeScript/V3_TS_advance/*.png
+W14_TypeScript/V3_TS_advance/TS_advance/node_modules
+W14_TypeScript/V3_TS_advance/TS_advance/build
