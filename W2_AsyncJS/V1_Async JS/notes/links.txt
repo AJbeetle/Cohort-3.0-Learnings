@@ -1,0 +1,5 @@
+1. Asynchronous JS, callbacks and more :https://projects.100xdevs.com/tracks/async-js-1/Asynchronous-Javascript--Callbacks-and-more-2
+
+2. Someone made a journal of cohort 3.0 : https://salmoneatenbybear.github.io/Cohort_3.0_Cournal_x/
+
+Cournal : continum Jousrnal 

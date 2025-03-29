@@ -1,0 +1,2 @@
+1. lecture slides : https://projects.100xdevs.com/tracks/promises-async-await/Promises-and-async--await-1
+2. web3 notes : https://feather-lion-ff2.notion.site/100xDevs-Cohort-3-Web3-Resource-7eebc2510a754899a579331e174c4a31
