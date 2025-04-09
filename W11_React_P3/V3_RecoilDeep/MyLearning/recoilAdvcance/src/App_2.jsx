@@ -72,6 +72,10 @@ function NavBarComp(){
   const message = navBarGetting.message;
   const notify = navBarGetting.notification;
   const allNotificn = useRecoilValue(allNavSelector);
+  // OR
+  /* const allNotificn = useMemo(()=>{
+    return network+message+job+notify
+  },[network,job, message,notify]); */
 
 
   // NOW THE PROBLEM WITH THIS CODE IS THAT : see in App_3.jsx
