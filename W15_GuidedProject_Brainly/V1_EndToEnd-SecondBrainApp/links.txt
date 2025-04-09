@@ -1,0 +1,22 @@
+1. Lecture Slides : https://petal-estimate-4e9.notion.site/Building-a-second-brain-app-1407dfd1073580c19ac3cbe9afa9ac27
+
+-------------------------------------------------------
+
+the problem that one guy had searching, i think he can do that using fulltext search or something. I've done that in of one my projects and it's working pretty goo
+
+
+-------------------------------------------------------
+
+Sir get content mein "TypeError: Converting circular structure to JSON" aisa error aa raha hai. Anybody help
+
+
+--------------------------------------------------------
+
+1:33:00 - userMiddleware
+
+---------------------------------------------------------
+
+Here are explanations about :
+  -> vector db
+  -> embeddings
+  
