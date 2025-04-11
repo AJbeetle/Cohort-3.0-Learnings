@@ -3,8 +3,8 @@ reference for UI/UX of frontend
 1. ![alt text](image.png)
 2. ![alt text](image-1.png)
 
-Doing my own work in folder : BrainlyFrontend
-Learning from harkirat : BrainlyFE_Learn
+Doing my own work in folder : BrainlyFE_Learn
+Learning from harkirat : this file
 
 
 Today we will do frontend of secondBrain app (aka Brainly)
@@ -37,4 +37,15 @@ Components we need to build
 -> How to do End to End of this application => take user Input, generate its embeddings from any AI model, then store these inside some vector DB and then optimise the search over these vector DB space and then send the user prompt with your context to AI model [with proper prompt engineering] and then send back the response to user
 Use : __quedrent__ : open source vector database that you can self host
 , __superbase__ : another vector DB
--
+
+
+
+
+-> if you use ReactQuery you don't need recoil
+-> ![Okay something interesting](image-2.png)
+
+
+TODO :-
+1. See how diffferent processes communicate | nod backend talking to python process [microservices]  |  also you can spawn a python process from nodeJS process
+
+2. Quiz.100xdevs.com : work there
