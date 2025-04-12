@@ -150,4 +150,7 @@ W15_GuidedProject_Brainly/V3_BrainlyEndToEnd/*.png
 
 # W16-WebSockets ----------------------------------------------------------------------------
 
-W16_WebSockets
+W16_WebSockets/V1_IntroToWebsckets/*.png
+W16_WebSockets/V1_IntroToWebsckets/WebSocketsLearning/node_modules
+
+# W16_WebSockets/V2_ChatApp
