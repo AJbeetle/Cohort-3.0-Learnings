@@ -168,4 +168,9 @@ W17_Postgress__SQL/V2_Postgress_SQL_P2/postgreLeaern/node_modules
 W17_Postgress__SQL/V2_Postgress_SQL_P2/postgreLeaern/.env
 
 # W18- PRISMA -----------------------------------------------------------------------------------
-W18_Prima_ORMs
+W18_Prima_ORMs/V1_Prisma/*.png
+W18_Prima_ORMs/V1_Prisma/prismaLearn/dist
+
+W18_Prima_ORMs/V2_Prisma Advance and ORMs/*.png
+W18_Prima_ORMs/V2_Prisma Advance and ORMs/create-vite
+W18_Prima_ORMs/V2_Prisma Advance and ORMs/NEXT/
