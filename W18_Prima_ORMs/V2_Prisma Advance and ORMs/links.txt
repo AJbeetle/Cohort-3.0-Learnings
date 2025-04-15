@@ -1,0 +1,9 @@
+lecture slides : https://projects.100xdevs.com/tracks/nextjs-1/next-1
+
+
+
+SEE THESE VIDEOS :-
+
+If you want to understand use client and server components, you can watch those videos, I think those videos are helpful :)
+1. https://www.youtube.com/watch?v=bugO1tmSDpM
+2. https://www.youtube.com/watch?v=bugO1tmSDpM

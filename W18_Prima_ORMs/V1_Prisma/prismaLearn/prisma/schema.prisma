@@ -1,0 +1,28 @@
+generator client {
+  provider = "prisma-client-js"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model users {
+  id        Int        @default(autoincrement())  @id
+  username  String     @unique
+  password  String
+  age       Int
+  city      String?
+  todos     Todos[]    //so every users will have a bunch of todos of type arrays of Todos table
+}
+
+model Todos {
+  id            Int     @default(autoincrement())   @id
+  title         String
+  decription    String
+  done          Boolean
+  user_id       Int
+  time          DateTime  @default(now())
+  user          users      @relation(fields:[user_id], references: [id])   //here we say, every todo have a user, which is associated with user_id as foreign key from users tables primary key [id]. We can also say every todo has parent user who have some id which is referenced here in user_id coloumn
+}
