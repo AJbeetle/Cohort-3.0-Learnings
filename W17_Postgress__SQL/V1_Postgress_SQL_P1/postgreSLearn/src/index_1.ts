@@ -21,13 +21,22 @@ const userModel:mongoose.Model<userI> = mongoose.model("users",userSchema); */
 
 // POSTGRESS
 
+import dotenv from "dotenv"
 import {Client} from "pg"
+dotenv.config({
+    path : ".env"
+})
 
-// const pgClient = new Client("postgresql://neondb_owner:npg_kPerLNqUu47v@ep-winter-smoke-a1ew3exl-pooler.ap-southeast-1.aws.neon.tech/neondb?sslmode=require");
+const db = process.env.DB;
+const username = process.env.userDB;
+const password = process.env.password;
+
+
+// const pgClient = new Client(db);
 
 const pgClient2 = new Client({
-    user : "neondb_owner",
-    password : "npg_kPerLNqUu47v",
+    user : username,
+    password : password,
     port : 5432,
     host : "ep-winter-smoke-a1ew3exl-pooler.ap-southeast-1.aws.neon.tech",
     ssl:true,

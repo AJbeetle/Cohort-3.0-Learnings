@@ -1,17 +1,30 @@
 // HOW SQL INJECTIONS HAPPEN
 import {Client} from "pg"
+import dotenv from "dotenv"
+const result = dotenv.config({
+    path : ".env"
+})
+// console.log(result);
 import express, {Request, Response} from "express"
 
 const app = express();
 
+const db = process.env.DB;
+const username = process.env.userDB;
+const password = process.env.password;
+// console.log("username : "+username+"password : "+password)
+
+
+// const pgClient = new Client(db);
+
 const pgClient = new Client({
-    user: "neondb_owner",
-    password : "npg_kPerLNqUu47v",
+    user : username ,
+    password : password,
     port : 5432,
     host : "ep-winter-smoke-a1ew3exl-pooler.ap-southeast-1.aws.neon.tech",
     ssl:true,
-    database: "neondb" 
-});
+    database : "neondb",
+})
 
 pgClient.connect();
 app.use(express.json());

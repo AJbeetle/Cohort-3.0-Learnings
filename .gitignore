@@ -157,10 +157,15 @@ W16_WebSockets/V1_IntroToWebsckets/WebSocketsLearning/node_modules
 
 # W17-Postgress and SQL -------------------------------------------------------------------------
 
-W17_Postgress_&_SQL/V1_Postgress&SQL_P1/*.png
-W17_Postgress_&_SQL/V1_Postgress&SQL_P1/postgreSLearn/dist
-W17_Postgress_&_SQL/V1_Postgress&SQL_P1/postgreSLearn/node_modules
+W17_Postgress__SQL/V1_Postgress_SQL_P1/*.png
+W17_Postgress__SQL/V1_Postgress_SQL_P1/postgreSLearn/dist
+W17_Postgress__SQL/V1_Postgress_SQL_P1/postgreSLearn/node_modules
+W17_Postgress__SQL/V1_Postgress_SQL_P1/postgreSLearn/.env
 
-W17_Postgress_&_SQL/V2_Postgress&SQL_P2/*.png
-W17_Postgress_&_SQL/V2_Postgress&SQL_P2/postgreLeaern/dist
-W17_Postgress_&_SQL/V2_Postgress&SQL_P2/postgreLeaern/node_modules
+W17_Postgress__SQL/V2_Postgress_SQL_P2/*.png
+W17_Postgress__SQL/V2_Postgress_SQL_P2/postgreLeaern/dist
+W17_Postgress__SQL/V2_Postgress_SQL_P2/postgreLeaern/node_modules
+W17_Postgress__SQL/V2_Postgress_SQL_P2/postgreLeaern/.env
+
+# W18- PRISMA -----------------------------------------------------------------------------------
+W18_Prima_ORMs
