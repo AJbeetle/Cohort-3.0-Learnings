@@ -1,0 +1,5 @@
+Lecture Slides : https://projects.100xdevs.com/tracks/nextjs-1/next-1
+
+API we been working with : https://week-13-offline.kirattechnologies.workers.dev/api/v1/user/details
+
+
