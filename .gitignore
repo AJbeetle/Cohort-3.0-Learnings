@@ -1,24 +1,24 @@
 # Week1-Orientation ------------------------------------------------------------
 
-W_1_Class-Orientation/V1-WebDev and Devops Orientation/notes/HTML,CSS and cloning.pdf
+W01_Class-Orientation/V1-WebDev and Devops Orientation/notes/HTML,CSS and cloning.pdf
 
-W_1_Class-Orientation/V1-WebDev and Devops Orientation/Screenshots
+W01_Class-Orientation/V1-WebDev and Devops Orientation/Screenshots
 
-W_1_Class-Orientation/V2-Basics of JS/node_modules
+W01_Class-Orientation/V2-Basics of JS/node_modules
 
-W_1_Class-Orientation/V2-Basics of JS/notes/BasicsOfJS.pdf
+W01_Class-Orientation/V2-Basics of JS/notes/BasicsOfJS.pdf
 
-W_1_Class-Orientation/V2-Basics of JS/screenshots
+W01_Class-Orientation/V2-Basics of JS/screenshots
 
 
 # Week1-Offline-Warmup ------------------------------------------------------------
-W_1_off_Cohort2_Warmup/screenshots
+W01_off_Cohort2_Warmup/screenshots
 
 
 # Week2-AsyncJS ------------------------------------------------------------
 
-W2_AsyncJS/V1_Async JS/screenshots
-W2_AsyncJS/V2_Promises/screenshots
+W02_AsyncJS/V1_Async JS/screenshots
+W02_AsyncJS/V2_Promises/screenshots
 
 # W2_Offline ------------------------------------------------------------
 
@@ -34,11 +34,11 @@ W2_AsyncJS/V2_Promises/screenshots
 
 # Week3-DOM ------------------------------------------------------------
 
-# W3_DOM/V1_DOM Simple
+# W03_DOM/V1_DOM Simple
 W3_DOM/V2_DOM Advance/screenshots_someThingsHarkiratDidTakeALook
 
 
-# W4-NodeJs and HTTP ------------------------------------------------------------
+# W04-NodeJs and HTTP ------------------------------------------------------------
 
 W4_Node.Js and HTTP/V1_NodeJs,Bun and JS runtime/proj/node_modules
 W4_Node.Js and HTTP/V2_HTTP Servers/todoBackend/node_modules
@@ -100,8 +100,8 @@ W9_React/V4_React from Basics_Part2/learningBasicTwo/node_modules
 
 # W10-React_P2  ------------------------------------------------------------
 
-W_10_React_P2/V1_SPAs_Routing/SPA/node_modules
-W_10_React_P2/V2_ContextAPI_RollingUpTheState/contextAPILearn/node_modules
+W10_React_P2/V1_SPAs_Routing/SPA/node_modules
+W10_React_P2/V2_ContextAPI_RollingUpTheState/contextAPILearn/node_modules
 
 # W11-React_P3 ------------------------------------------------------------
 
