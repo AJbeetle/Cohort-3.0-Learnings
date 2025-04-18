@@ -71,3 +71,5 @@ so, cookie contains the token for that user, we will learn it in JWT
 Fetch is like a postman who just delivers and picks up letters. You need to do some work yourself, like opening the letter (parsing JSON) and checking for problems (HTTP errors).
 
 Axios is like a premium delivery guy who also reads the letter, explains it to you (automatic JSON parsing), and checks for issues (error handling).
+
+//Informational change after parent folders renamed
