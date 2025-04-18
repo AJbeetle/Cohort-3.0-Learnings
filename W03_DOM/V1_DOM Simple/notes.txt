@@ -87,3 +87,5 @@ ANSWER : just because somehting is deleted from the DOM it does not mean that it
 DOM ADVANCE : we will do advance dom manipulation, state management and reconciliation
 
 got to file : 2.basicToDo.html
+
+//Informational change after parent folders renamed
