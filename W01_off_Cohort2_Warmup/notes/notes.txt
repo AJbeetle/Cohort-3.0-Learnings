@@ -44,3 +44,6 @@
 
 6. positioning using CSS 
     -
+
+
+//Informational change after parent folders renamed
