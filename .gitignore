@@ -61,42 +61,42 @@ W05_Offline/V3_Axios_vs_Fetch/node_modules
 
 # W6-HTTP Deep Dive ------------------------------------------------------------
 
-W6/V1_HTTPDeepDive/backend/node_modules
-W6/V2_AuthAndConnectingFEtoBE/backend/node_modules
-W6/V2_AuthAndConnectingFEtoBE/todoFullStack/backend/node_modules
+W06/V1_HTTPDeepDive/backend/node_modules
+W06/V2_AuthAndConnectingFEtoBE/backend/node_modules
+W06/V2_AuthAndConnectingFEtoBE/todoFullStack/backend/node_modules
 
 # W6-offline ------------------------------------------------------------
 
-# W6-offline/V1_JWT and Auth Recap
-# W6-offline/V2_MongoInstallation
+# W06-offline/V1_JWT and Auth Recap
+# W06-offline/V2_MongoInstallation
 
 # W7-mongoDB ------------------------------------------------------------
 
-W7_MongoDB/V1_MongoDB/.env
-W7_MongoDB/V1_MongoDB/LearningBackend/node_modules
-W7_MongoDB/V2_Passwords, ZOD/mongoBasicDB/node_modules
-W7_MongoDB/V2_Passwords, ZOD/mongoBasicDB/.env
+W07_MongoDB/V1_MongoDB/.env
+W07_MongoDB/V1_MongoDB/LearningBackend/node_modules
+W07_MongoDB/V2_Passwords, ZOD/mongoBasicDB/node_modules
+W07_MongoDB/V2_Passwords, ZOD/mongoBasicDB/.env
 
 # W8-CourseSellingApp ------------------------------------------------------------
 
 # W8_CourseSellingApp/V1_CourseSellingApp_BackendP1/png
-W8_CourseSellingApp/V1_CourseSellingApp_BackendP1/backend_CourseSellingApp/.env
-W8_CourseSellingApp/V1_CourseSellingApp_BackendP1/backend_CourseSellingApp/node_modules
-W8_CourseSellingApp/V1_CourseSellingApp_BackendP1/backend_CourseSellingApp/node_modules
+W08_CourseSellingApp/V1_CourseSellingApp_BackendP1/backend_CourseSellingApp/.env
+W08_CourseSellingApp/V1_CourseSellingApp_BackendP1/backend_CourseSellingApp/node_modules
+W08_CourseSellingApp/V1_CourseSellingApp_BackendP1/backend_CourseSellingApp/node_modules
 
 # W8_CourseSellingApp/V2_CourseSellingApp_BackendP2
 
 
-# W8-offline ------------------------------------------------------------
-# W8_Offline/V1_Mongo Deep Dive
+# W08-offline ------------------------------------------------------------
+# W08_Offline/V1_Mongo Deep Dive
 
 
 
 # W9-React ------------------------------------------------------------
-# W9_React/V1_React Basics/
-W9_React/V2_React UseState/vite/basicUnstyledReact/node_modules
-W9_React/V3_Recorded_React from basics/Basics/node_modules
-W9_React/V4_React from Basics_Part2/learningBasicTwo/node_modules
+# W09_React/V1_React Basics/
+W09_React/V2_React UseState/vite/basicUnstyledReact/node_modules
+W09_React/V3_Recorded_React from basics/Basics/node_modules
+W09_React/V4_React from Basics_Part2/learningBasicTwo/node_modules
 
 # W10-React_P2  ------------------------------------------------------------
 
