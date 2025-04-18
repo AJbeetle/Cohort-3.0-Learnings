@@ -10,5 +10,5 @@ CSS - Cascading Style Sheets
 
 Every color can be represented using color name, RGB values, Hex values, etc.
 
-
+//Informational change after parent folders renamed
 
