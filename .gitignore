@@ -22,42 +22,42 @@ W02_AsyncJS/V2_Promises/screenshots
 
 # W2_Offline ------------------------------------------------------------
 
-# W2_Offline/V1_BashandTerminal
+# W02_Offline/V1_BashandTerminal
 
-# W2_Offline/V2_BashAdvance
+# W02_Offline/V2_BashAdvance
 
-# W2_Offline/V3_InstallingNode and doing Assignments
+# W02_Offline/V3_InstallingNode and doing Assignments
 
-# W2_Offline/V4_VsCodeAssignment
+# W02_Offline/V4_VsCodeAssignment
 
-# W2_Offline/V5_CallbackHell,Rejects and ASync Await
+# W02_Offline/V5_CallbackHell,Rejects and ASync Await
 
 # Week3-DOM ------------------------------------------------------------
 
 # W03_DOM/V1_DOM Simple
-W3_DOM/V2_DOM Advance/screenshots_someThingsHarkiratDidTakeALook
+W03_DOM/V2_DOM Advance/screenshots_someThingsHarkiratDidTakeALook
 
 
 # W04-NodeJs and HTTP ------------------------------------------------------------
 
-W4_Node.Js and HTTP/V1_NodeJs,Bun and JS runtime/proj/node_modules
-W4_Node.Js and HTTP/V2_HTTP Servers/todoBackend/node_modules
+W04_Node.Js and HTTP/V1_NodeJs,Bun and JS runtime/proj/node_modules
+W04_Node.Js and HTTP/V2_HTTP Servers/todoBackend/node_modules
 
 # W4-Offline ------------------------------------------------------------
 
-W4_offline/V1_HTTP and Express/node_modules
-W4_offline/V2_Middlewares/simpleExpressApp/node_modules
+W04_offline/V1_HTTP and Express/node_modules
+W04_offline/V2_Middlewares/simpleExpressApp/node_modules
 
 # W5-HTTP and Middlewares ------------------------------------------------------------
-W5_HTTP and Middlewares/V1_Header,QueryParamsANDExpress/learn1/node_modules
-W5_HTTP and Middlewares/V2_MiddlewaresAndCors/code/node_modules
-W5_HTTP and Middlewares/V2_MiddlewaresAndCors/inClassAssign/node_modules
+W05_HTTP and Middlewares/V1_Header,QueryParamsANDExpress/learn1/node_modules
+W05_HTTP and Middlewares/V2_MiddlewaresAndCors/code/node_modules
+W05_HTTP and Middlewares/V2_MiddlewaresAndCors/inClassAssign/node_modules
 
 # W5-offline ------------------------------------------------------------
 
-# W5_Offline/V1_GitandGithub
-# W5_Offline/V2_Map_Filter_ArrowFunction
-W5_Offline/V3_Axios_vs_Fetch/node_modules
+# W05_Offline/V1_GitandGithub
+# W05_Offline/V2_Map_Filter_ArrowFunction
+W05_Offline/V3_Axios_vs_Fetch/node_modules
 
 # W6-HTTP Deep Dive ------------------------------------------------------------
 
