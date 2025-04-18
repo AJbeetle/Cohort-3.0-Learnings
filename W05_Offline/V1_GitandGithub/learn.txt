@@ -35,3 +35,5 @@ terms and terminology:
 4. pull
 
 see notes images in folder
+
+//Informational change after parent folders renamed
