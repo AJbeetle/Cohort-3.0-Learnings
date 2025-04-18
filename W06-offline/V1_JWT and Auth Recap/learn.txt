@@ -23,3 +23,5 @@ TRY CATCH ========================================
 throwing and catching errors 
 
 DONE : Assignment from cohort 2 , week3 JWT
+
+//Informational change after parent folders renamed
